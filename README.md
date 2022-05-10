@@ -3,30 +3,30 @@
 Neste Repositório estão os meus projetos desenvolvidos nos meses de Maio e Junho de 2022 como parte do [Alura Challenge Data Science](https://www.alura.com.br/challenges/data-science). 
 
 * [Sobre o Challenge](#sobre-o-challenge)
-* [Projetos desenvolvidos](#projetos-desenvolvidos)
-    + [Semana 1](#semana-1-alura-films)
+* [Etapas do projeto](#etapas-do-projeto)
+    + [Semana 1](#semana-1-primeiros-passos-em-data-science)
       - [Página de Receitas](#página-de-receitas)
-    + [Semana 2](#semana-2-alura-foods)
+    + [Semana 2](#semana-2-explorando-os-dados)
       - [Página Inicial](#página-inicial)
-    + [Semana 3](#semana-3-alura-skimó)
+    + [Semana 3](#semana-3-exterminando-o-futuro)
       - [Página Inicial](#página-inicial)
 * [Entre em Contato](#entre-em-contato)
 
 ## Sobre o Challenge
 
-O Alura Challenge constitui de 3 desafios semanais para que os participantes pudessem desenvolver novos conhecimentos, aprender novas ferramentas e criar um portifólio na área de Business Inteligence e ciência de dados, enquanto é simulado um fluxo de trabalho em uma empresa. 
+O Alura Challenge constitui de 3 desafios semanais para que os participantes pudessem desenvolver novos conhecimentos, aprender novas ferramentas e criar um portifólio na área de Business Inteligence e ciência de dados, enquanto é simulado um fluxo de trabalho em uma empresa. Ao longo do challenge, serão enviados cards pelo meio da plataforma [Trello](https://trello.com) como forma de incentivar um sistema ágil de desenvolvimento, assim como informar as requisições da empresa.
 
-Em cada semana do desafio foi enviado uma área de trabalho no [Trello](https://trello.com/), disponibilizando um conjunto de dados e algumas informações pertinentes da empresa, assim como informando as métricas que deveriam ser exibidas na versão final do dashboard. Além disso, foram disponibilizados links para cursos da plataforma Alura, com o intuito de aprofundar o conhecimento dos participantes.
+Neste desafio, a empresa Alura Voz, uma empresa de telecomunicações, deseja reduzir a taxa de evasão de seus clientes. Para isso, a empresa disponibilizou uma base de dados no formato JSON com informações sobre seus clientes. Durante as próximas semanas, os dados serão tratados, explorados e utilizados como base para a criação de um modelo de machine learning, com o intuito de encontrar clientes com a possibilidade de fazer o cancelamento de seus contratos.
 
-## Projetos desenvolvidos
+## Etapas do projeto
 
-### Semana 1 Alura Films
-
-
-### Semana 2 Alura Foods
+### Semana 1 Primeiros passos em Data Science
 
 
-### Semana 3 Alura Skimó.
+### Semana 2 Explorando os dados
+
+
+### Semana 3 Exterminando o futuro
 
 ## Entre em contato
 
