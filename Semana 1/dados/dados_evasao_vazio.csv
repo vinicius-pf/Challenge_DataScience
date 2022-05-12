@@ -4,7 +4,7 @@ ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Se
 0154-QYHJU,,Masculino,Não,Não,Não,29,Sim,Não,DSL,Sim,Sim,Não,Sim,Não,Não,Anual,1.96,Sim,Cheque eletrônico,58.75,1696.2
 0162-RZGMZ,,Feminino,Sim,Não,Não,5,Sim,Não,DSL,Sim,Sim,Não,Sim,Não,Não,Mensal,2.0,Não,Cartão de crédito (automática),59.9,287.85
 0274-VVQOQ,,Masculino,Sim,Sim,Não,65,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Anual,3.44,Sim,Tranferência bancária (automática),103.15,6792.45
-0328-IBUPK,,Feminino,Não,Sim,Sim,51,Não,Sem serviço de telefone,DSL,Sim,Não,Não,Sim,Não,Não,Bianual,1.14,Não,Tranferência bancária (automática),34.2,1782
+0328-IBUPK,,Feminino,Não,Sim,Sim,51,Não,Sem serviço de telefone,DSL,Sim,Não,Não,Sim,Não,Não,Bianual,1.14,Não,Tranferência bancária (automática),34.2,1782.0
 0448-YZNZE,,Masculino,Sim,Sim,Não,27,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Não,Sim,Mensal,3.18,Sim,Cheque eletrônico,95.55,2510.2
 0510-EXSMQ,,Feminino,Não,Não,Não,9,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.3,Não,Cheque eletrônico,69.05,651.5
 0530-HBKHZ,,Feminino,Sim,Sim,Não,1,Não,Sem serviço de telefone,DSL,Não,Não,Não,Não,Não,Não,Mensal,0.83,Sim,Cheque eletrônico,24.8,24.8
@@ -39,12 +39,12 @@ ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Se
 1867-RAWZK,,Masculino,Não,Sim,Sim,19,Sim,Sim,Fibra Óptica,Não,Não,Sim,Sim,Sim,Sim,Mensal,3.44,Não,Cheque eletrônico,103.3,2012.7
 1972-RSMOV,,Feminino,Não,Sim,Não,40,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.64,Não,Cheque,19.1,780.1
 1975-FCJTE,,Feminino,Não,Sim,Não,45,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.85,Não,Cheque,25.5,1121.05
-2183-ZULVZ,,Feminino,Não,Sim,Sim,70,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.84,Sim,Cartão de crédito (automática),115.15,8250
+2183-ZULVZ,,Feminino,Não,Sim,Sim,70,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.84,Sim,Cartão de crédito (automática),115.15,8250.0
 2353-VPYNS,,Masculino,Sim,Não,Não,1,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.46,Sim,Cheque eletrônico,73.65,73.65
 2424-GXJQO,,Feminino,Não,Não,Não,3,Sim,Não,DSL,Não,Não,Sim,Não,Sim,Não,Mensal,1.92,Não,Cheque eletrônico,57.55,161.45
 2508-QJJFP,,Masculino,Não,Não,Sim,47,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.68,Não,Cartão de crédito (automática),20.55,1013.05
 2550-ZQZPP,,Masculino,Sim,Sim,Não,7,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.51,Sim,Cheque eletrônico,75.4,533.05
-2575-EAMDV,,Feminino,Não,Não,Não,35,Sim,Não,Fibra Óptica,Não,Não,Sim,Sim,Sim,Sim,Anual,3.31,Sim,Cheque eletrônico,99.25,3532
+2575-EAMDV,,Feminino,Não,Não,Não,35,Sim,Não,Fibra Óptica,Não,Não,Sim,Sim,Sim,Sim,Anual,3.31,Sim,Cheque eletrônico,99.25,3532.0
 2599-GTQWQ,,Masculino,Sim,Não,Não,39,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Sim,Mensal,3.19,Sim,Tranferência bancária (automática),95.65,3759.05
 2642-NQSNM,,Feminino,Não,Não,Não,8,Sim,Não,DSL,Sim,Não,Não,Sim,Não,Não,Anual,1.81,Não,Tranferência bancária (automática),54.25,447.75
 2672-SXZJB,,Feminino,Não,Sim,Sim,56,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.66,Sim,Cartão de crédito (automática),19.8,1119.9
@@ -58,7 +58,7 @@ ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Se
 3134-JCVOE,,Feminino,Não,Não,Não,3,Não,Sem serviço de telefone,DSL,Não,Sim,Não,Não,Não,Não,Mensal,0.97,Não,Cheque,29.2,98.5
 3161-PJNCN,,Feminino,Sim,Sim,Não,67,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.67,Sim,Tranferência bancária (automática),20.05,1263.05
 3337-EUOON,,Masculino,Não,Sim,Sim,69,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.87,Sim,Tranferência bancária (automática),26.0,1796.55
-3345-CSCIA,,Masculino,Não,Não,Não,68,Sim,Sim,DSL,Sim,Sim,Sim,Não,Não,Sim,Anual,2.56,Sim,Cartão de crédito (automática),76.9,5023
+3345-CSCIA,,Masculino,Não,Não,Não,68,Sim,Sim,DSL,Sim,Sim,Sim,Não,Não,Sim,Anual,2.56,Sim,Cartão de crédito (automática),76.9,5023.0
 3394-UQYIB,,Feminino,Sim,Sim,Não,2,Sim,Não,DSL,Não,Sim,Não,Não,Não,Não,Mensal,1.67,Não,Cartão de crédito (automática),50.15,115.1
 3443-KUJWU,,Masculino,Não,Sim,Não,47,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Mensal,3.47,Sim,Cheque eletrônico,104.1,5135.15
 3485-REZCX,,Masculino,Não,Não,Não,64,Sim,Sim,Fibra Óptica,Sim,Sim,Não,Não,Não,Não,Anual,2.81,Sim,Cartão de crédito (automática),84.3,5289.05
@@ -127,7 +127,7 @@ ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Se
 6167-SYRNG,,Masculino,Sim,Sim,Não,59,Não,Sem serviço de telefone,DSL,Sim,Não,Sim,Sim,Sim,Sim,Bianual,2.13,Sim,Cartão de crédito (automática),64.05,3886.85
 6225-VNQSJ,,Masculino,Não,Não,Não,1,Não,Sem serviço de telefone,DSL,Não,Não,Não,Não,Não,Sim,Mensal,1.18,Sim,Cheque eletrônico,35.45,35.45
 6271-PRTUU,,Feminino,Não,Sim,Sim,28,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.65,Sim,Tranferência bancária (automática),19.55,543.8
-6272-HWGNQ,,Feminino,Não,Não,Não,1,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.83,Sim,Cheque eletrônico,85.0,85
+6272-HWGNQ,,Feminino,Não,Não,Não,1,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.83,Sim,Cheque eletrônico,85.0,85.0
 6303-APKJD,,Masculino,Sim,Sim,Não,57,Sim,Sim,Fibra Óptica,Não,Sim,Não,Não,Não,Sim,Mensal,2.99,Sim,Cheque eletrônico,89.85,4925.35
 6319-ZXCPZ,,Masculino,Não,Sim,Não,60,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Não,Mensal,3.19,Sim,Cheque eletrônico,95.75,5742.9
 6381-LOPCO,,Masculino,Não,Não,Não,1,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.33,Sim,Cheque eletrônico,69.8,69.8
@@ -152,7 +152,7 @@ ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Se
 7069-PURBI,,Feminino,Não,Sim,Não,14,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.68,Não,Cheque,20.4,292.4
 7115-SIPGA,,Masculino,Não,Não,Sim,69,Sim,Sim,DSL,Sim,Sim,Sim,Sim,Sim,Não,Bianual,2.65,Sim,Cartão de crédito (automática),79.45,5502.55
 7117-EVURU,,Masculino,Não,Não,Não,39,Não,Sem serviço de telefone,DSL,Sim,Sim,Não,Sim,Sim,Não,Mensal,1.63,Sim,Cartão de crédito (automática),48.95,1880.85
-7132-EASOG,,Masculino,Não,Sim,Sim,7,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.69,Não,Cheque,20.65,150
+7132-EASOG,,Masculino,Não,Sim,Sim,7,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.69,Não,Cheque,20.65,150.0
 7165-CNJFG,,Masculino,Sim,Sim,Não,35,Sim,Sim,Fibra Óptica,Sim,Sim,Não,Não,Não,Sim,Mensal,3.15,Sim,Cheque eletrônico,94.55,3365.4
 7278-VXADF,,Masculino,Sim,Sim,Não,16,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Não,Mensal,2.84,Sim,Cartão de crédito (automática),85.05,1391.15
 7295-EXSMO,,Feminino,Sim,Não,Não,3,Sim,Não,Fibra Óptica,Não,Não,Sim,Não,Não,Não,Mensal,2.5,Não,Cheque,75.05,202.9
@@ -165,7 +165,7 @@ ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Se
 7586-NHQEA,,Feminino,Não,Não,Não,10,Não,Sem serviço de telefone,DSL,Não,Não,Não,Sim,Não,Não,Bianual,0.99,Sim,Cheque,29.6,299.05
 7606-GWMKE,,Masculino,Não,Não,Sim,21,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.82,Não,Cheque,24.7,467.15
 7637-IKUJQ,,Masculino,Não,Sim,Não,57,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Não,Mensal,3.44,Sim,Cheque eletrônico,103.05,5925.75
-7662-TWISV,,Feminino,Não,Não,Sim,51,Não,Sem serviço de telefone,DSL,Sim,Não,Sim,Sim,Sim,Sim,Anual,2.0,Não,Tranferência bancária (automática),60.15,3077
+7662-TWISV,,Feminino,Não,Não,Sim,51,Não,Sem serviço de telefone,DSL,Sim,Não,Sim,Sim,Sim,Sim,Anual,2.0,Não,Tranferência bancária (automática),60.15,3077.0
 7709-FQREH,,Feminino,Não,Sim,Não,18,Sim,Sim,Fibra Óptica,Não,Não,Não,Sim,Sim,Não,Mensal,2.96,Sim,Cheque eletrônico,88.85,1594.75
 7766-CVTAF,,Masculino,Não,Sim,Sim,43,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.81,Não,Cheque,24.25,1077.95
 7808-NBWYW,,Feminino,Sim,Sim,Não,3,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Sim,Não,Mensal,2.68,Sim,Cheque eletrônico,80.4,224.05
@@ -197,7 +197,7 @@ ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Se
 9218-TUMIQ,,Feminino,Não,Sim,Sim,62,Sim,Não,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Mensal,3.34,Sim,Cheque eletrônico,100.15,6283.3
 9228-KNQVN,,Feminino,Não,Sim,Não,59,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Não,Sim,Anual,3.57,Sim,Cartão de crédito (automática),107.0,6152.3
 9239-YGYBO,,Feminino,Não,Sim,Sim,13,Sim,Não,DSL,Sim,Não,Não,Sim,Não,Não,Anual,1.8,Não,Tranferência bancária (automática),54.15,701.05
-9243-TUYBL,,Masculino,Sim,Sim,Não,28,Sim,Sim,Fibra Óptica,Não,Sim,Não,Sim,Sim,Sim,Mensal,3.53,Sim,Cheque eletrônico,105.8,2998
+9243-TUYBL,,Masculino,Sim,Sim,Não,28,Sim,Sim,Fibra Óptica,Não,Sim,Não,Sim,Sim,Sim,Mensal,3.53,Sim,Cheque eletrônico,105.8,2998.0
 9364-HVJRK,,Masculino,Não,Não,Não,8,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.5,Sim,Cheque,45.15,438.4
 9366-PGOCJ,,Masculino,Não,Não,Não,57,Sim,Não,DSL,Não,Sim,Não,Sim,Não,Não,Anual,1.82,Sim,Cheque,54.65,3134.7
 9371-CLMGW,,Feminino,Não,Não,Não,6,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Sim,Sim,Mensal,2.98,Não,Cheque eletrônico,89.3,577.6
