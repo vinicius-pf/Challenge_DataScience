@@ -10,6 +10,7 @@ Neste Repositório estão os meus projetos desenvolvidos nos meses de Maio e Jun
       - [Verificando e corrigindo as inconsistências](#verificando-e-corrigindo-as-inconsistências)
       - [Traduzindo as colunas](#traduzindo-as-colunas)
       - [Coluna de contas diárias](#coluna-de-contas-diárias)
+      - [Exportando os dados](#exportando-os-dados)
     + [Semana 2](#semana-2-explorando-os-dados)
       - [Página Inicial](#página-inicial)
     + [Semana 3](#semana-3-exterminando-o-futuro)
@@ -132,25 +133,25 @@ A tradução das colunas levou em conta a tradução literal, as informações c
 
 Nome da coluna | Tradução da coluna | Tipo de variável
 -------|------------------ | ------------
-`customerID`| ID_Cliente | categórica
-`Churn`| Evasao | categórica
-`gender`| Genero | categórica
-`SeniorCitizen`| Eh_Idoso | categórica
-`Partner`| Tem_Parceiro | categórica
-`Dependents`| Tem_Dependentes | categórica
+`customerID`| ID_Cliente | categórica nominal
+`Churn`| Evasao | categórica nominal
+`gender`| Genero | categórica nominal
+`SeniorCitizen`| Eh_Idoso | categórica nominal
+`Partner`| Tem_Parceiro | categórica nominal
+`Dependents`| Tem_Dependentes | categórica nominal
 `tenure`| Tempo_Contrato | numérica discreta
-`PhoneService`| Servico_Telefone | categórica
-`MultipleLines`| Linhas_Multiplas | categórica
-`InternetService`| Servico_Internet | categórica
-`OnlineSecurity`| Adiconal_Seguranca | categórica
-`OnlineBackup`| Adicional_Backup | categórica
-`DeviceProtection`| Adiconal_Protecao | categórica
-`TechSupport`| Adicional_Suporte | categórica
-`StreamingTV`| Streaming_TV | categórica
-`StreamingMovies`| Streaming_Filmes | categórica
-`Contract`| Tipo_Contrato | categórica
-`PaperlessBilling`| Conta_Digital | categórica
-`PaymentMethod`| Metodo_Pagamento | categórica
+`PhoneService`| Servico_Telefone | categórica nominal
+`MultipleLines`| Linhas_Multiplas | categórica nominal
+`InternetService`| Servico_Internet | categórica nominal
+`OnlineSecurity`| Adiconal_Seguranca | categórica nominal
+`OnlineBackup`| Adicional_Backup | categórica nominal
+`DeviceProtection`| Adiconal_Protecao | categórica nominal
+`TechSupport`| Adicional_Suporte | categórica nominal
+`StreamingTV`| Streaming_TV | categórica nominal
+`StreamingMovies`| Streaming_Filmes | categórica nominal
+`Contract`| Tipo_Contrato | categórica nominal
+`PaperlessBilling`| Conta_Digital | categórica nominal
+`PaymentMethod`| Metodo_Pagamento | categórica nominal
 `Charges.Monthly`| Valor_Mensal | numérica discreta<sup>1</sup>
 `Charges.Total`| Valor_Total | numérica discreta<sup>1</sup>
 
