@@ -41,14 +41,15 @@ Para o desenvolvimento da solução, foi utilizada a linguagem [Python](https://
 
 #### Entendendo as informações
 
-
+Com os [dados disponíveis](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados.json), eles foram importados para um [Jupyter Notebook](placement). Porém, foi percebido que as informações necessárias para as análises estavam contidas dentro das colunas do DataFrame original.
 
 ![Dados Iniciais](https://user-images.githubusercontent.com/6025360/168080005-8a5fa136-d21c-4da5-8c56-16e2ab033041.png)
 
+Para resolver isso, foi utilizado o método [`json_normalize()`](https://pandas.pydata.org/docs/reference/api/pandas.json_normalize.html). Esse método teve que ser feito para 4 colunas. Para cada coluna, foi criado um novo DataFrame, que no final foi juntado com o DataFrame original com a função [`merge()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html). Para concluir, as colunas originais, que foram expandidas, foram retiradas do DataFrame, permitindo assim uma análise mais direta dos dados.
 
 ![Dados Normalizados](https://user-images.githubusercontent.com/6025360/168080046-7e1348fd-07dd-40a0-b47c-e518e199436f.png)
 
-
+Além da base de dados, a empresa também disponibilizou um dicionário. Esse dicionário traz um comentário sobre cada coluna, explicando o seu significado. Ele será utilizado em conjunto com as análises para definir qual os tipos de cada variável e para ser feita a tradução dos nomes das colunas e dos dados.
 
 Nome da coluna | Dicionário da empresa
 -------|------------------
