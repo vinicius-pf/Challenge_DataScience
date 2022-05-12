@@ -79,7 +79,7 @@ Charges.Total| total gasto pelo cliente
 
 Após a organização inicial, as colunas foram analisadas com mais clareza. Primeiramente foi verificado se haviam dados em branco com o método [`.info()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html), o que não foi percebido. Após isso, foi definida uma função para a análise de colunas que retornava 3 informações: Valores únicos, contagem dos valores e tipo relacionado à coluna:
 
------000
+![Função](https://user-images.githubusercontent.com/6025360/168085389-be19e674-d888-4281-b1ee-3758625d6194.png)
 
 Aplicando a função em todas as colunas do DataFrame, foi percebido que:
 
