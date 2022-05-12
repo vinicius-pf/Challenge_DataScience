@@ -20,7 +20,7 @@ Neste Repositório estão os meus projetos desenvolvidos nos meses de Maio e Jun
 
 O Alura Challenge constitui de 3 desafios semanais para que os participantes pudessem desenvolver novos conhecimentos, aprender novas ferramentas e criar um portifólio na área de Business Inteligence e ciência de dados, enquanto é simulado um fluxo de trabalho em uma empresa. Ao longo do challenge, serão enviados cards pelo meio da plataforma [Trello](https://trello.com) como forma de incentivar um sistema ágil de desenvolvimento, assim como informar as requisições da empresa.
 
-Neste desafio, a empresa Alura Voz, uma empresa de telecomunicações, deseja reduzir a taxa de evasão de seus clientes. Para isso, a empresa disponibilizou uma base de dados no formato JSON com informações sobre seus clientes. Durante as próximas semanas, os dados serão tratados, explorados e utilizados como base para a criação de um modelo de machine learning, com o intuito de encontrar clientes com a possibilidade de fazer o cancelamento de seus contratos.
+Neste desafio, a empresa Alura Voz, uma empresa de telecomunicações, deseja reduzir a taxa de evasão de seus clientes. Para isso, a empresa disponibilizou uma base de dados no formato *JSON* com informações sobre seus clientes. Durante as próximas semanas, os dados serão tratados, explorados e utilizados como base para a criação de um modelo de machine learning, com o intuito de encontrar clientes com a possibilidade de fazer o cancelamento de seus contratos.
 
 ## Etapas do projeto
 
@@ -53,50 +53,121 @@ Além da base de dados, a empresa também disponibilizou um dicionário. Esse di
 
 Nome da coluna | Dicionário da empresa
 -------|------------------
-customerID| Código único para o cliente da empresa
-Churn| se o cliente deixou ou não a empresa
-gender| gênero (masculino e feminino)
-SeniorCitizen| informação sobre um cliente ter ou não idade igual ou maior que 65 anos
-Partner| se o cliente possui ou não um parceiro ou parceira
-Dependents| se o cliente possui ou não dependentes
-tenure| meses de contrato do cliente
-PhoneService| assinatura de serviço telefônico
-MultipleLines| assinatura de mais de uma linha de telefone
-InternetService| assinatura de um provedor internet
-OnlineSecurity| assinatura adicional de segurança online
-OnlineBackup| assinatura adicional de backup online
-DeviceProtection| assinatura adicional de proteção no dispositivo
-TechSupport| assinatura adicional de suporte técnico, menos tempo de espera
-StreamingTV| assinatura de TV a cabo
-StreamingMovies| assinatura de streaming de filmes
-Contract| tipo de contrato
-PaperlessBilling| se o cliente prefere receber online a fatura
-PaymentMethod| forma de pagamento
-Charges.Monthly| total de todos os serviços do cliente por mês
-Charges.Total| total gasto pelo cliente
+`customerID`| Código único para o cliente da empresa
+`Churn`| se o cliente deixou ou não a empresa
+`gender`| gênero (masculino e feminino)
+`SeniorCitizen`| informação sobre um cliente ter ou não idade igual ou maior que 65 anos
+`Partner`| se o cliente possui ou não um parceiro ou parceira
+`Dependents`| se o cliente possui ou não dependentes
+`tenure`| meses de contrato do cliente
+`PhoneService`| assinatura de serviço telefônico
+`MultipleLines`| assinatura de mais de uma linha de telefone
+`InternetService`| assinatura de um provedor internet
+`OnlineSecurity`| assinatura adicional de segurança online
+`OnlineBackup`| assinatura adicional de backup online
+`DeviceProtection`| assinatura adicional de proteção no dispositivo
+`TechSupport`| assinatura adicional de suporte técnico, menos tempo de espera
+`StreamingTV`| assinatura de TV a cabo
+`StreamingMovies`| assinatura de streaming de filmes
+`Contract`| tipo de contrato
+`PaperlessBilling`| se o cliente prefere receber online a fatura
+`PaymentMethod`| forma de pagamento
+`Charges.Monthly`| total de todos os serviços do cliente por mês
+`Charges.Total`| total gasto pelo cliente
 
 #### Analisando os tipos de dados
 
 Após a organização inicial, as colunas foram analisadas com mais clareza. Primeiramente foi verificado se haviam dados em branco com o método [`.info()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html), o que não foi percebido. Após isso, foi definida uma função para a análise de colunas que retornava 3 informações: Valores únicos, contagem dos valores e tipo relacionado à coluna:
 
-![Função](https://user-images.githubusercontent.com/6025360/168085389-be19e674-d888-4281-b1ee-3758625d6194.png)
+```python
+def analisa_coluna(coluna):
+
+    unicos = dados_normal[coluna].unique()
+    contagem = dados_normal[coluna].value_counts()
+    tipo = dados_normal[coluna].dtype
+
+    print(f'Valores únicos:')
+    print(unicos)
+    print('----------------')
+    print(f'Contagem de valores:')
+    print(contagem)
+    print('----------------')
+    print(f'Tipo da coluna:')
+    print(tipo)
+    print('----------------')
+
+```
 
 Aplicando a função em todas as colunas do DataFrame, foi percebido que:
 
-1. Há dados em branco na coluna 'Churn'. Eles não foram percebidos pelo primeiro método utilizado, mas esses dados devem ser tratados.
+1. Há dados em branco na coluna `Churn`. Eles não foram percebidos pelo primeiro método utilizado, mas esses dados devem ser tratados.
 
-2. A coluna 'SeniorCitizen' possue valores '0' e '1', ao invés de 'Yes' e 'No' presentes nas outras colunas booleanas. Isso será unificado para depois poder ser feita uma tradução dos dados.
+2. A coluna `SeniorCitizen` possue valores `0` e `1`, ao invés de `Yes` e `No` presentes nas outras colunas booleanas. Isso será unificado para depois poder ser feita uma tradução dos dados.
 
 3. As colunas extraídas durante o processo de normalização da base de dados aparentam ter informações condizentes entre si. 
 
-4. O tipo da coluna 'Charges.Total' deve ser alterado para float64.
-
+4. O tipo da coluna `Charges.Total` deve ser alterado para `float64`.
 
 #### Verificando e corrigindo as inconsistências
 
+Os valores em branco da coluna `Churn` serão divididos em outro arquivo de dados. Esta é a coluna alvo para a empresa, com informações dos clientes que evadiram. Manter os dados em branco nos dados utilizados para exploração visual e criação de modelos de machine learning poderá trazer resultados equivocados. Apesar disso, essas informações podem ser utilizadas após a fase de testes e validação do modelo de machine learning, tendo em vista que o objetivo é encontrar os clientes com maior potencial de fazer o cancelamento do contrato.
+
+Para a coluna `SeniorCitizen`, foi utilizado o método [`.replace()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.replace.html). Com a transformação feita, as traduções serão mais efetivas.
+
+As colunas extraídas contendo as informações sobre linhas telefônicas e serviçõs de internet possuem informações extras: a coluna `MultipleLines` contém valores para `Yes`, `No` e `No Phone Service`. Já nas colunas `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV` e `StreamingMovies` também contém valores `Yes` e `No`, com o adicional de `No Internet Service`. Esses valores extras serão mantidos no momento: apesar de trazer informações repetidas, algumas análises podem sofrer alterações. Caso seja necessário, essas informações podem ser alteradas em um outro momento.
+
+Ao tentar alterar o tipo de dados da coluna `Charges.Total` com o método [`.to_numeric()`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_numeric.html), ocorreu um erro. Assim como na coluna `Churn`, haviam valores faltantes que não foram percebidos inicialmente.
+
+![Charges.Total Vazios](https://user-images.githubusercontent.com/6025360/168160233-f9837539-0d59-4bda-a066-de1fc62c6fcf.png)
+
+<sub>O DataSet na imagem foi alterado para clareza.</sub>
+
+Analisando com calma, foi percebido que os valores faltantes da coluna correspondem aos clientes que possuem 0 meses na coluna tenure. Para corrigir isso, os valores em branco foi substituido por `0`. 
+
+Ao final das correções, as informações puderam ser traduzidas e divididas de acordo com a coluna `Churn`.
+
 #### Traduzindo as colunas
 
+A tradução das colunas levou em conta a tradução literal, as informações contidas na base de dados e também o dicionário disponibilizado pela empresa.
+
+Nome da coluna | Tradução da coluna | Tipo de variável
+-------|------------------ | ------------
+`customerID`| ID_Cliente | categórica
+`Churn`| Evasao | categórica
+`gender`| Genero | categórica
+`SeniorCitizen`| Eh_Idoso | categórica
+`Partner`| Tem_Parceiro | categórica
+`Dependents`| Tem_Dependentes | categórica
+`tenure`| Tempo_Contrato | numérica discreta
+`PhoneService`| Servico_Telefone | categórica
+`MultipleLines`| Linhas_Multiplas | categórica
+`InternetService`| Servico_Internet | categórica
+`OnlineSecurity`| Adiconal_Seguranca | categórica
+`OnlineBackup`| Adicional_Backup | categórica
+`DeviceProtection`| Adiconal_Protecao | categórica
+`TechSupport`| Adicional_Suporte | categórica
+`StreamingTV`| Streaming_TV | categórica
+`StreamingMovies`| Streaming_Filmes | categórica
+`Contract`| Tipo_Contrato | categórica
+`PaperlessBilling`| Conta_Digital | categórica
+`PaymentMethod`| Metodo_Pagamento | categórica
+`Charges.Monthly`| Valor_Mensal | numérica discreta<sup>1</sup>
+`Charges.Total`| Valor_Total | numérica discreta<sup>1</sup>
+
+([1](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch8/5214817-eng.htm)) Apesar de teoricamente receber qualquer valor, tem o limite de 2 casas decimais.
+
+Além dos nomes das colunas, também foram traduzidos os dados.
+
 #### Coluna de contas diárias
+
+A empresa pediu uma coluna extra, com o valor de gasto diário de cada cliente. Para a criação, foi utilizada a coluna `Charges.Monthly` como base e os valores foram dividos por 30, que é a média de dias por mês. O valor foi arredondado par 2 casas decimais, que é o padrão apresentado nas outras colunas de valores monetários presentes na base de dados.
+
+Como o pedido da empresa informava a posição desejada, primeiramente foi criado uma [Series do pandas](https://pandas.pydata.org/docs/reference/api/pandas.Series.html#pandas.Series) para receber os valores. Depois, foi utilizado o método [insert()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.insert.html).
+
+#### Exportando os dados
+
+Ao final das análises e tratamentos, os dados foram exportados para arquivos csv. Antes da exportação, o dataset foi dividido em 2: o [primeiro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_vazio.csv) recebeu as linhas em que a coluna `Evasao` estava em branco e o [outro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_completos.csv) sem esses valores.
+
 
 ### Semana 2 Explorando os dados
 
