@@ -77,6 +77,21 @@ Charges.Total| total gasto pelo cliente
 
 #### Analisando os tipos de dados
 
+Após a organização inicial, as colunas foram analisadas com mais clareza. Primeiramente foi verificado se haviam dados em branco com o método [`.info()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html), o que não foi percebido. Após isso, foi definida uma função para a análise de colunas que retornava 3 informações: Valores únicos, contagem dos valores e tipo relacionado à coluna:
+
+-----000
+
+Aplicando a função em todas as colunas do DataFrame, foi percebido que:
+
+1. Há dados em branco na coluna 'Churn'. Eles não foram percebidos pelo primeiro método utilizado, mas esses dados devem ser tratados.
+
+2. A coluna 'SeniorCitizen' possue valores '0' e '1', ao invés de 'Yes' e 'No' presentes nas outras colunas booleanas. Isso será unificado para depois poder ser feita uma tradução dos dados.
+
+3. As colunas extraídas durante o processo de normalização da base de dados aparentam ter informações condizentes entre si. 
+
+4. O tipo da coluna 'Charges.Total' deve ser alterado para float64.
+
+
 #### Verificando e corrigindo as inconsistências
 
 #### Traduzindo as colunas
