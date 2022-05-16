@@ -19,7 +19,7 @@ Neste Repositório estão os meus projetos desenvolvidos nos meses de Maio e Jun
 
 ## Sobre o Challenge
 
-O Alura Challenge constitui de 3 desafios semanais para que os participantes pudessem desenvolver novos conhecimentos, aprender novas ferramentas e criar um portifólio na área de Business Inteligence e ciência de dados, enquanto é simulado um fluxo de trabalho em uma empresa. Ao longo do challenge, serão enviados cards pelo meio da plataforma [Trello](https://trello.com) como forma de incentivar um sistema ágil de desenvolvimento, assim como informar as requisições da empresa.
+O Alura Challenge constitui de 3 desafios semanais para que os participantes pudessem desenvolver novos conhecimentos, aprender novas ferramentas e criar um portifólio na área de ciência de dados enquanto é simulado um fluxo de trabalho em uma empresa. Ao longo do challenge, serão enviados cards pelo meio da plataforma [Trello](https://trello.com) como forma de incentivar um sistema ágil de desenvolvimento, assim como informar as requisições da empresa.
 
 Neste desafio, a empresa Alura Voz, uma empresa de telecomunicações, deseja reduzir a taxa de evasão de seus clientes. Para isso, a empresa disponibilizou uma base de dados no formato *JSON* com informações sobre seus clientes. Durante as próximas semanas, os dados serão tratados, explorados e utilizados como base para a criação de um modelo de machine learning, com o intuito de encontrar clientes com a possibilidade de fazer o cancelamento de seus contratos.
 
@@ -173,6 +173,18 @@ Ao final das análises e tratamentos, os dados foram exportados para arquivos cs
 
 
 ### Semana 2 Explorando os dados
+
+Para a segunda semana, a empresa requisitou que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. 
+
+Antes disso, porém, há a necessidade de se corrigir alguns erros cometidos durante a primeira semana
+
+#### Correção de erros
+
+Durante a limpeza de dados, foi decidido separar os dados que estavam em branco na coluna `Churn`. Isso foi feito, porém não da maneira mais correta. Apesar de não aparecerem valores na coluna, os valores estão presentes como espaço em branco. Para análises futuras, pode ser necessário alterar para valores nulos.
+
+Outro equivoco ocorreu no tratamento de dados faltantes da coluna `Charges.Total`. Em um primeiro momento, os valores faltantes foram substituidos por `0`. A empresa, no entanto, requisitou que os valores incluidos fossem o mesmo da coluna `Charges.Monthly`.
+
+Após a correção desses problemas, a exploração dos dados com análises gráficas poderá seguir com mais clareza.
 
 
 ### Semana 3 Exterminando o futuro
