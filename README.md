@@ -174,7 +174,7 @@ Ao final das análises e tratamentos, os dados foram exportados para arquivos cs
 
 ### Semana 2 Explorando os dados
 
-Para a segunda semana, a empresa requisitou que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. 
+Para a segunda semana, a empresa requisitou que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. As visualizações foram criadas utilizando a biblioteca [Plotly](https://plotly.com/graphing-libraries/). Essa biblioteca permite criação de gráficos interativos. Porém, por se tratar de uma biblioteca escrita em Javascript, há erros de exibição pelo github. Para corrigir isso e visualizar o Jupyter Notebook com as análises, deve-se visualizar o mesmo pelo meio do google colab [neste link](link).
 
 Antes disso, porém, há a necessidade de se corrigir alguns erros cometidos durante a primeira semana
 
@@ -185,6 +185,50 @@ Durante a limpeza de dados, foi decidido separar os dados que estavam em branco 
 Outro equivoco ocorreu no tratamento de dados faltantes da coluna `Charges.Total`. Em um primeiro momento, os valores faltantes foram substituidos por `0`. A empresa, no entanto, requisitou que os valores incluidos fossem o mesmo da coluna `Charges.Monthly`.
 
 Após a correção desses problemas, a exploração dos dados com análises gráficas poderá seguir com mais clareza.
+
+#### Visualizando a distribuição da variável target
+
+Para visualizar a variável target, foram utilizados dois tipos de gráfico: um histograma e um gráfico de pizza.
+
+O histograma é um bom gráfico para comparar distribuições e contagens entre valores das variáveis. Em variáveis numéricas, ele ajuda a entender a distribuição da variável e comparar alguns valores. Como esta é uma variável categórica que recebe apenas dois valores, o gráfico foi uma solução simples para a comparação das contagens e percentual dos valores.
+
+<img src="https://user-images.githubusercontent.com/6025360/169667731-df677f15-ef2d-4e99-acfa-5badb6a33759.png" width = 500, height = 500/>
+
+Com o histograma percebe-se que há mais clientes que não evadiram do que clientes evadidos. Para entender melhor a taxa de evasão, pode ser utilizado um gráfico de pizza. Apesar de não ser o mais indicado para análises gráficas, esse tipo de gráfico permite visualizar o percentual com mais cuidado e clareza.
+
+<img src= "https://user-images.githubusercontent.com/6025360/169667946-75208814-9ef6-43e3-aa5e-6f87ca7f1807.png" width = 500, height = 500/>
+
+Com esses gráficos, é percebido que: 26,5% dos clientes da empresa cancelaram os planos contratados. Apesar da empresa não apresentar metas para a taxa de evasão, a taxa se mostra alta em relação à outros casos.
+
+Com a distribuição verificada, pode-se iniciar a próxima etapa e comparar como as outras variáveis do sistema se distribuiem em relação a variável target. 
+
+#### Analisando a correlação entre as variáveis
+
+Antes de fazer as análises com as outras variáveis, foi analisada a correlação entre as mesmas. Primeiro foi utilizado o método [.corr()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html) da biblioteca Pandas. Esse método calcula a correlação entre as variáveis numéricas de um dataset utilizando o método Pearson, podendo esse método ser alterado. Porém, as variáveis presentes no dataset não são apenas numéricas, mas também categóricas. Para contornar esse problema, foi utilizado o módulo python [Dython](http://shakedzy.xyz/dython/). Esse módulo foi criado para facilitar algumas etapas de análise de dados, incluindo um método para o cálculo de correlação entre variáveis numéricas e associação de variáveis categóricas. 
+
+O método [associations()](http://shakedzy.xyz/dython/modules/nominal/) retorna duas informações: uma tabela com as associações e correlações, que a biblioteca calcula de acordo com o tipo de cada variável, e um mapa de calor com os valores da tabela, para fácil análise visual.
+
+![image](https://user-images.githubusercontent.com/6025360/169669037-c00220b4-9206-4a53-8d24-d82016840422.png)
+
+Com a correlação calculada, é possível perceber alguns pontos:
+
+1 - As colunas `Servico_Internet`,`Adicional_Seguranca`,`Adicional_Backup`,`Adicional_Protecao`,`Adicional_Suporte`,`Streaming_TV`,`Streaming_Filmes` possuem forte correlação entre si. Há valores nas outras colunas que são dependentes da coluna `Servico_Internet`: o cliente que não contratou serviço de internet sempre terá o mesmo valor nas outras colunas.
+
+2 - Há uma alta relação entre `Servico_Telefone` e `Linhas_Multiplas`. Isso pode ter o mesmo motivo que a relação das colunas a respeito de serviços online.
+
+3 - A coluna *target*, `Evasao`, apresenta relação fraca com as colunas `Servico_Internet`,`Adicional_Seguranca`,`Adicional_Backup`,`Adicional_Protecao`,`Adicional_Suporte`,`Streaming_TV`, `Streaming_Filmes`, `Tipo_Contrato`, `Tempo_Contrato`, `Metodo_Pagamento` e `Valor_Total`. Com as outras colunas há uma relação muito fraca.
+
+4 - A variável `Servico_Internet` tem uma relação forte com as colunas `Valor_Mensal` e `Valor_Dia`. As colunas relacionadas à `Servico_Internet` também possuem correlação com as variáveis financeiras, porém de menor intensidade.
+
+5 - A variável `Tempo_Contrato` possue relação com as variáveis `Tipo_Contrato` e `Metodo_Pagamento`. Também possuem relação pouco forte com os serviços de internet e a coluna `Linhas_Multiplas`.
+
+6 - As colunas `Tem_Parceiro` e `Tem_Dependentes` tem uma relação pouco forte entre si. As outras colunas não possuem relação com as variáveis.
+
+#### Analisando a variável Churn em conjunto com outras variáveis
+
+#### Análises extras
+
+#### 
 
 
 ### Semana 3 Exterminando o futuro
