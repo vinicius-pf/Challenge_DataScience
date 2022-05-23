@@ -169,12 +169,14 @@ Como o pedido da empresa informava a posição desejada, primeiramente foi criad
 
 #### Exportando os dados
 
-Ao final das análises e tratamentos, os dados foram exportados para arquivos csv. Antes da exportação, o dataset foi dividido em 2: o [primeiro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_vazio.csv) recebeu as linhas em que a coluna `Evasao` estava em branco e o [outro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_completos.csv) sem esses valores.
+Ao final das análises e tratamentos, os dados foram exportados para arquivos csv. Antes da exportação, o dataset foi dividido em 2: o [primeiro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_vazio.csv) recebeu as linhas em que a coluna `Evasao` estava em branco e o [outro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_completos.csv) recebeu as linhas com informação da evasão ou não do cliente..
 
 
 ### Semana 2 Explorando os dados
 
-Para a segunda semana, a empresa requisitou que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. As visualizações foram criadas utilizando a biblioteca [Plotly](https://plotly.com/graphing-libraries/). Essa biblioteca permite criação de gráficos interativos. Porém, por se tratar de uma biblioteca escrita em Javascript, há erros de exibição pelo github. Para corrigir isso e visualizar o Jupyter Notebook com as análises, deve-se visualizar o mesmo pelo meio do google colab [neste link](link).
+[Link para o notebook](link)
+
+Para a segunda semana, a empresa requisitou, por meio do [Trello](https://trello.com/b/uUsVCrPb/challenge-ds-semana-2), que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. As visualizações foram criadas utilizando a biblioteca [Plotly](https://plotly.com/graphing-libraries/). Essa biblioteca permite criação de gráficos interativos. Porém, por se tratar de uma biblioteca escrita em Javascript, há erros de exibição pelo github. Para corrigir isso e visualizar o Jupyter Notebook com as análises, deve-se visualizar o mesmo pelo meio do Google Colab.
 
 Antes disso, porém, há a necessidade de se corrigir alguns erros cometidos durante a primeira semana
 
@@ -225,6 +227,38 @@ Com a correlação calculada, é possível perceber alguns pontos:
 6 - As colunas `Tem_Parceiro` e `Tem_Dependentes` tem uma relação pouco forte entre si. As outras colunas não possuem relação com as variáveis.
 
 #### Analisando a variável Churn em conjunto com outras variáveis
+
+Para as análises extras da variável target, foram selecionadas algumas colunas que possuem relação forte com a mesma. Para isso, foram criadas visualizações de distribuição e frequência nas colunas `Valor_Mensal`, `Tempo_Contrato`, `Servico_Internet`, `Servico_Telefone`, `Tipo_Contrato`, `Conta_Digital` e `Metodo_Pagamento`.
+
+Analisando a coluna `Valor_Mensal`, se percebe que a média de gastos mensais dos clientes que evadiram a empresa é maior do que aquelas que não cancelaram o contrato. Isso pode ser uma explicação do motivo do cancelamento: descontentamento com o valor pago.
+
+img valor
+
+Para a coluna `Tempo_Contrato`, oberva-se que as pessoas que evadiram possuem uma média menor de tempo de contrato, se comparado as pessoas que ficaram na empresa. Com essa informação, foi verificado também a distribuição de evasão de acordo com o tempo de contrato. Ao fazer isso, foi possível entender que para clientes com tempo de contrato menor que 10 meses, há uma taxa de evasão maior do que o resto do dataset. Outro ponto importante foi visualizado: entre os clientes com 1 e 2 meses de contrato, há mais clientes que evadiram a empresa do que estão no momento nela.
+
+img tempo
+
+A variável `Servico_Internet` é outra coluna que apresentou distribuição atípica. Os clientes que assinaram o serviço de `Fibra Óptica` da empresa possuem uma taxa de evasão maior que a dos clientes totais da empresa. Para entender melhor esse comportamento foram feitas análises subsequentes.
+
+img fibra
+
+Para a coluna `Servico_Telefone`, a análise não mostrou diferença de taxa de evasão em comparação com a taxa de todos os clientes. A maioria dos clientes possue serviço de telefonia contratado com a empresa.
+
+img telefone
+
+Durante a análise da coluna `Tipo_Contrato`, um comportamento parecido com a coluna `Servico_Internet` foi percebido. Clientes que optam por um plano mensal possuem taxa de evasão elevada. No entanto, foi percebido um comportamento diferente nas outras possibilidades também. Clientes com plano anual possuem uma taxa de evasão menor do que aqueles com plano mensal. Já clientes com plano bianual possuem a menor taxa de evasão: apenas 3% dos clientes com plano bianual evadiram da empresa.
+
+img tipo
+
+
+`Conta_Digital`
+
+img conta
+
+
+`Metodo_Pagamento`
+
+img metodo
 
 #### Análises extras
 
