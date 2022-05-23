@@ -250,13 +250,11 @@ Durante a análise da coluna `Tipo_Contrato`, um comportamento parecido com a co
 
 img tipo
 
-
-`Conta_Digital`
+Na coluna `Conta digital`, se percebe uma taxa maior de evasão para clientes que possuem conta digital, enquanto clientes que não possuem o serviço aparentam uma taxa de evasão menor. 
 
 img conta
 
-
-`Metodo_Pagamento`
+Por último, na coluna `Metodo_Pagamento`, aqueles que optam por pagamento via `Cheque eletrônico` possuem uma taxa de evasão elevada em comparação aos outros clientes. Os outros métodos de pagamento possuem taxa de evasão parecida e menor que a taxa de evasão global.
 
 img metodo
 
