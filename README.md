@@ -4,9 +4,9 @@ Neste Repositório estão os meus projetos desenvolvidos nos meses de Maio e Jun
 
 * [Sobre o Challenge](#sobre-o-challenge)
 * [Etapas do projeto](#etapas-do-projeto)
-    + [Semana 1](#semana-1-primeiros-passos-em-data-science)
-    + [Semana 2](#semana-2-explorando-os-dados)
-    + [Semana 3](#semana-3-exterminando-o-futuro)
+    + [Semana 1: Primeiros passos em Data Science](#semana-1-primeiros-passos-em-data-science)
+    + [Semana 2: Explorando os dados](#semana-2-explorando-os-dados)
+    + [Semana 3: Exterminando o futuro](#semana-3-exterminando-o-futuro)
 * [Entre em Contato](#entre-em-contato)
 
 ## Sobre o Challenge
@@ -34,13 +34,13 @@ Além desses pedidos, houveram 2 pedidos extras:
 
 Para o desenvolvimento da solução, foi utilizada a linguagem [Python](https://www.python.org) e a biblioteca [Pandas](https://pandas.pydata.org). Como IDE foi utilizado o [Google Colab](https://colab.research.google.com).
 
+Ao longo das análises, foram percebidos que a coluna target, que informa se o cliente evadiu a empresa ou não, continha valores em branco. O mesmo aconteceu para a variável `Charges.Total`, que apresentava valores em branco para os clientes com menos de 1 mês de contrato. Para este caso, os valores em branco foram substituídos por 0. No caso da variável target, os registros foram removidos para as análises exploratória e gráficas. No entanto eles foram salvos em uma outra base de dados, para que o modelo de machine learning que será desenvolvido possa prever essas informações, depois enviando a empresa os clientes que possam evadir.
+
 ### Semana 2 Explorando os dados
 
 [Link para o notebook](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Semana-2/Semana%202/%20Analises_Graficas.ipynb)
 
 Para a segunda semana, a empresa requisitou, por meio do [Trello](https://trello.com/b/uUsVCrPb/challenge-ds-semana-2), que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. As visualizações foram criadas utilizando a biblioteca [Plotly](https://plotly.com/graphing-libraries/). Essa biblioteca permite criação de gráficos interativos. Porém, por se tratar de uma biblioteca escrita em Javascript, há erros de exibição pelo github. Para corrigir isso e visualizar o Jupyter Notebook com as análises, deve-se visualizar o mesmo pelo meio do Google Colab.
-
-Antes disso, porém, há a necessidade de se corrigir alguns erros cometidos durante a primeira semana
 
 ### Semana 3 Exterminando o futuro
 
