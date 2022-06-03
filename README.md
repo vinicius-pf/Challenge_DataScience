@@ -21,11 +21,26 @@ Neste desafio, a empresa Alura Voz, uma empresa de telecomunicações, deseja re
 
 [Link para o Notebook](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/Tratamento_dos_Dados.ipynb)
 
+Na primeira semana, foi disponibilizada a base de dados por meio do [Trello](https://trello.com/b/JdUXpLrp/challenge-ds-semana-1). No mesmo local, foram enviados algumas requisições da empresa:
+
+- Entender quais informações a base de dados possui
+- Analisar quais os tipos de dados
+- Verificar quais são as inconsistências nos dados
+- Corrigir as inconsistências nos dados
+
+Além desses pedidos, houveram 2 pedidos extras:
+- Traduzir as colunas
+- Criar coluna de contas diárias
+
+Para o desenvolvimento da solução, foi utilizada a linguagem [Python](https://www.python.org) e a biblioteca [Pandas](https://pandas.pydata.org). Como IDE foi utilizado o [Google Colab](https://colab.research.google.com).
 
 ### Semana 2 Explorando os dados
 
 [Link para o notebook](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Semana-2/Semana%202/%20Analises_Graficas.ipynb)
 
+Para a segunda semana, a empresa requisitou, por meio do [Trello](https://trello.com/b/uUsVCrPb/challenge-ds-semana-2), que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. As visualizações foram criadas utilizando a biblioteca [Plotly](https://plotly.com/graphing-libraries/). Essa biblioteca permite criação de gráficos interativos. Porém, por se tratar de uma biblioteca escrita em Javascript, há erros de exibição pelo github. Para corrigir isso e visualizar o Jupyter Notebook com as análises, deve-se visualizar o mesmo pelo meio do Google Colab.
+
+Antes disso, porém, há a necessidade de se corrigir alguns erros cometidos durante a primeira semana
 
 ### Semana 3 Exterminando o futuro
 

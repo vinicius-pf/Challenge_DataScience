@@ -1,17 +1,5 @@
 # [Semana 1](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/Tratamento_dos_Dados.ipynb)
 
-Na primeira semana, foi disponibilizada a base de dados por meio do [Trello](https://trello.com/b/JdUXpLrp/challenge-ds-semana-1). No mesmo local, foram enviados algumas requisições da empresa:
-
-- Entender quais informações a base de dados possui
-- Analisar quais os tipos de dados
-- Verificar quais são as inconsistências nos dados
-- Corrigir as inconsistências nos dados
-
-Além desses pedidos, houveram 2 pedidos extras:
-- Traduzir as colunas
-- Criar coluna de contas diárias
-
-Para o desenvolvimento da solução, foi utilizada a linguagem [Python](https://www.python.org) e a biblioteca [Pandas](https://pandas.pydata.org). Como IDE foi utilizado o [Google Colab](https://colab.research.google.com).
 
 #### Entendendo as informações
 

@@ -1,8 +1,5 @@
 # [Semana 2](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Semana-2/Semana%202/%20Analises_Graficas.ipynb)
 
-Para a segunda semana, a empresa requisitou, por meio do [Trello](https://trello.com/b/uUsVCrPb/challenge-ds-semana-2), que algumas visualizações fossem criadas. O foco das vizualizações será a variável `Churn`, tendo em vista que é o foco do projeto. As visualizações foram criadas utilizando a biblioteca [Plotly](https://plotly.com/graphing-libraries/). Essa biblioteca permite criação de gráficos interativos. Porém, por se tratar de uma biblioteca escrita em Javascript, há erros de exibição pelo github. Para corrigir isso e visualizar o Jupyter Notebook com as análises, deve-se visualizar o mesmo pelo meio do Google Colab.
-
-Antes disso, porém, há a necessidade de se corrigir alguns erros cometidos durante a primeira semana
 
 #### Correção de erros
 
