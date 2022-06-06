@@ -57,7 +57,7 @@ dados = pd.get_dummies(data = dados, columns = categoricos)
 
 Após a aplicação das técnicas de encoding nos dados, em conjunto com as análises do Pandas-Profilling, foi percebido que a variável target está desbalanceada. Isso é um problema, pois o modelo de machine learning pode apresentar métricas boas, apesar de estar errando mais do que o esperado. 
 
-img desbalanceamento
+![image](https://user-images.githubusercontent.com/6025360/172242364-b498e6e3-e4da-4ebf-b8d4-89fe70cd1099.png)
 
 Como a variável está desbalanceada, é necessário balancear os dados. Existem duas principais técnicas de balanceamento de dados: *Undersampling* e *Oversampling*. Para esse projeto foi escolhido o método *Oversampling*. Essa técnica consiste em aumentar a contagem da categoria com menor contagem, até que esta esteja com a mesma quantidade da categoria majoritária. Isso resolve o problema de balanceamento, mas pode gerar overfitting em modelos de machine learning.
 
@@ -155,7 +155,7 @@ for modelo in modelos:
 
 Com os modelos criados, treinados e com os resultados calculados, a etapa de avaliação consistiu em definir as principais métricas para análise. Com as métricas calculadas, foi possível definir modelho que melhor se adequou aos dados desse projeto.
 
-Para a avaliação inicial dos modelos, foram calculadas as métricas de acurácia, precisão, recall e f1 para cada modelo.
+Para a avaliação inicial dos modelos, foram calculadas as métricas de acurácia, precisão, recall e f1 para cada modelo. Além disso, também foi criada e exibida a matriz de confusão de cada modelo.
 
 ```python
 from sklearn import metrics
@@ -167,7 +167,6 @@ def valida_modelo(modelo, y_test, y_pred):
     f1 = metrics.f1_score(y_test, y_pred).round(4)
 
     metricas = [acuracia, precisao, recall, f1]
-
     matriz = metrics.confusion_matrix(y_test, y_pred)
 
     return metricas, matriz
@@ -185,11 +184,11 @@ for modelo, resultado in resultados.items():
     disp.plot()
 ```
 
-img dataframe
+![image](https://user-images.githubusercontent.com/6025360/172242419-3b9a4aca-2f92-4589-aa32-4ca163085cf2.png)
 
 Com os resultados, foi possível perceber que o melhor modelo foi o Random Forest Classifier, seguido pelo Logistic Regression e SVC. Para confirmar os testes e escolher o melhor modelo, a curva ROC dos dois melhores modelos foi inserida em um gráfico.
 
-img curva roc
+![image](https://user-images.githubusercontent.com/6025360/172242428-45710a54-1690-4acc-9b70-b8709696b909.png)
 
 Com a curva ROC calculada, percebeu-se que o modelo Random Forest Classifier obteve os melhores resultados com esse dataset. Com o modelo definido, a etapa seguinte foi validar o modelo utilizando o cross-validate e otimizar o modelo, afim de melhorar os resultados obtidos e evitar o *overfitting*.
 
@@ -205,7 +204,6 @@ Para a validação cruzada, foram definidas duas funções. Uma para calcular as
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_validate
 
-
 def validacao_cruzada(modelo):
     cv = StratifiedKFold(n_splits = 10)
     resultados = cross_validate(modelo, X, y, cv = cv, return_train_score=True)
@@ -220,6 +218,8 @@ def imprime_resultado(resultados):
 
     print(f'Acurácia: teste = {acuracia_teste:.2f}, treino = {acuracia_treino:.2f}')
 ```
+
+![image](https://user-images.githubusercontent.com/6025360/172242465-2bff9d9d-de09-4bb3-aa0d-fc57fa31b22d.png)
 
 Ao ser efetuada, a validação cruzada mostrou que a acurácia do modelo para dados de treino está em 99,80%. Isso pode ser um sinal de *overfitting*, afinal para os dados de teste a acurácia é de 85,24%. Para resolver esse problema, é necessário ajustar os hiperparâmetros do modelo. Apesar da possibilidade dos ajustes serem feitos manualmente, foram utilizados modelos autônomos para encontrar os melhores valores.
 
