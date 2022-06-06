@@ -1,10 +1,10 @@
 # [Semana 3]
 
-Após a conclusão da análise exploratória, a empresa requisitou que fosse desenvolvido, otimizado e avalidao um modelo de Machine Learning, com o intuito de classificar e encontrar os clientes com maior possibilidade de cancelarem o contrato com a empresa. Os principais pontos a serem desenvolvidos foram disponibilizados novamente via [Trello](https://trello.com/b/3HddKpUa/challenge-ds-semana-3).
+Após a conclusão da análise exploratória, a empresa requisitou que fosse desenvolvido, otimizado e avalido um modelo de Machine Learning, com o intuito de classificar e encontrar os clientes com maior possibilidade de cancelarem o contrato. Os principais pontos a serem desenvolvidos foram disponibilizados novamente via [Trello](https://trello.com/b/3HddKpUa/challenge-ds-semana-3).
 
 ## Preparando os dados
 
-Após a importação dos dados corrigidos ao londo da segunda semana, a biblioteca [Pandas Profilling](https://pandas-profiling.ydata.ai/docs/master/index.html) foi utilizada para gerar um relatório em HTML com informações a respeito das variáveis, além de correlação entre as variáveis do sistema. 
+Após a importação dos dados corrigidos ao longo da segunda semana, a biblioteca [Pandas Profilling](https://pandas-profiling.ydata.ai/docs/master/index.html) foi utilizada para gerar um relatório em HTML com informações a respeito das variáveis, além de correlação entre as variáveis do sistema. 
 
 Com as informações do relatório, se percebeu a necessidade de excluir algumas informações dos dados que não serão utlizadas no modelo de machine learning, assim como algumas variáveis que possuem correlação forte entre si. Além disso, foi percebido que a variável target não está balanceada, o que será necessário ser feito para que os modelos de machine learning tenham resultados melhores. 
 
@@ -16,7 +16,7 @@ Com as variáveis removidas, a base de dados pode receber técnicas de encoding,
 
 ### Aplicando Encoding nos dados
 
-COmo a base de dados em texto, que não são entendidos corretamente pelos modelos de machine learning, será necessário aplicar técnicas de encoding para que os dados textuais sejam classificados e organizados como numéricos.
+Como a base de dados em texto, que não são entendidos corretamente pelos modelos de machine learning, será necessário aplicar técnicas de encoding para que os dados textuais sejam classificados e organizados como numéricos.
 
 Para isso, foram utilizadas duas técnicas de encoding diferentes. A primeira, chamada de *Label Encoding*, tem como o objetivo designar um número sequencial para cada valor textual diferente dentro da variável. Essa técnica foi aplicada nas variáveis que contém apenas valores `Sim` e `Não`: `Evasao`, `Eh_Idoso`, `Tem_Parceiro`, `Tem_Dependentes`, `Servico_Telefone` e `Conta_Digital`.
 
@@ -39,7 +39,7 @@ dados['Genero'].replace(mapa, inplace = True)
 
 Apesar de eficaz, a técnica anterior pode trazer comportamentos indesejados. Ao se aplicar alguma técnica de *label encoding* em colunas com mais de 2 valores distintos, [o modelo de machine learning pode capturar algum comportamento que não existe na realidade](https://www.analyticsvidhya.com/blog/2020/03/one-hot-encoding-vs-label-encoding-using-scikit-learn/). 
 
-Para evitar esse comportamento indesejado, será utilizada outra técnica de *encoding*, chamada de *One-Hot Encoding*. Essa técnica consiste em criar colunas novas para cada valor distinto de texto. Esse método, no entanto, pode apresentar Dummy Variable Trap. Isso acontece quando duas variáveis novas criadas pela técnica são altamente correlacionadas. 
+Para evitar essa captura, será utilizada outra técnica de *encoding*, chamada de *One-Hot Encoding*. Essa técnica consiste em criar colunas novas para cada valor distinto de texto. Esse método, no entanto, pode apresentar Dummy Variable Trap. Foram executados testes para entender e encontrar esse comportamento. Apenas a variável `Valor_Mensal` teve resultado expressivo. Como foi apenas essa variável, e com as outras não apresentando problemas, a variável foi mantida no sistema.
 
 A técnica foi utilizada para as outras variáveis categóricas presentes nos dados. Para isso, foi utilizado o método [.get_dummies()](https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html).
 
@@ -55,13 +55,13 @@ dados = pd.get_dummies(data = dados, columns = categoricos)
 
 ### Balanceando os dados
 
-Após a aplicação das técnicas de encoding nos dados, é possível verificar se a variável target está balanceada. Caso a variável esteja desbalanceada, o modelo de machine learning pode apresentar métricas boas, apesar de estar errando mais do que o esperado. 
+Após a aplicação das técnicas de encoding nos dados, em conjunto com as análises do Pandas-Profilling, foi percebido que a variável target está desbalanceada. Isso é um problema, pois o modelo de machine learning pode apresentar métricas boas, apesar de estar errando mais do que o esperado. 
 
 img desbalanceamento
 
-Como a variável está desbalanceada, é necessário balancear os dados. Existem duas principais técnicas de balanceamento de dados: *Undersampling* e *Oversampling*. Para esse projeto foi escolhido o método *Oversampling*. Esse método consiste em aumentar a contagem da categoria com menor contagem, até que esta esteja com a mesma quantidade da categoria majoritária. Isso resolve o problema de balanceamento, mas pode gerar overfitting em modelos de machine learning.
+Como a variável está desbalanceada, é necessário balancear os dados. Existem duas principais técnicas de balanceamento de dados: *Undersampling* e *Oversampling*. Para esse projeto foi escolhido o método *Oversampling*. Essa técnica consiste em aumentar a contagem da categoria com menor contagem, até que esta esteja com a mesma quantidade da categoria majoritária. Isso resolve o problema de balanceamento, mas pode gerar overfitting em modelos de machine learning.
 
-Para o balanceamento, foi utilizado o método [SMOTE()](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) da biblioteca Imbalanced Learn. Esse método cria novos registros sintéticos, com base nas informações existentes.
+Para o balanceamento, foi utilizado o método [SMOTE()](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) da biblioteca Imbalanced Learn. Esse método cria novos registros sintéticos, com base nas informações existentes. Esse método tem, intríseco ao modelo, uma aleatoriedade que não permite que os resultados sejam replicados com facilidade. Para isso, foi definido o paramêtro *random_state* em *42*. Outros métodos utilizados em conjunto com o modelo de machine learning tem o mesmo problema, que foi corrigido da mesma forma.
 
 ```python
 from imblearn.over_sampling import SMOTE
@@ -101,16 +101,17 @@ dados_balanceados.head()
 
 Após as técnincas aplicadas na fase de pré-processamento dos dados, foram criados modelos de machine learning, os quais foram comparados de acordo com alguma métricas e o mais bem avaliado foi escolhido para otimização e aplicação prática com os dados faltantes descobertos na primeira análise. Para essa etapa, utilizou-se a biblioteca [Scikit-Learn](https://scikit-learn.org/stable/index.html), que possue módulos e métodos para pré-processamento dos dados e criação, avaliação e otimização de modelos de machine learning.
 
-Antes da criação dos modelos, os dados foram separados entre dados de treino e teste utilizando o método [train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html). Os dados foram divididos em 75% para treino e 25% para testes.
+Antes da criação dos modelos, os dados foram separados entre dados de treino, que servem para adequar o modelo aos dados, e teste, que servem para que o modelo faça as previsões de classificação, utilizando o método [train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html). Por padrão, é [utilizado 30% para dados de teste e 70% para dados de treino](https://www.geeksforgeeks.org/how-to-split-a-dataset-into-train-and-test-sets-using-python/).
 
 ```python
 from sklearn.model_selection import train_test_split
 
 SEED = 42
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=SEED)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=SEED, stratify = y)
 ```
 
+Após a separação dos dados, pode-se dar início a criação dos modelos de machine learning.
 
 ### Criação
 
@@ -154,8 +155,6 @@ for modelo in modelos:
 
 Com os modelos criados, treinados e com os resultados calculados, a etapa de avaliação consistiu em definir as principais métricas para análise. Com as métricas calculadas, foi possível definir modelho que melhor se adequou aos dados desse projeto.
 
-#### Métricas acurácia, precisão, recall e f1
-
 Para a avaliação inicial dos modelos, foram calculadas as métricas de acurácia, precisão, recall e f1 para cada modelo.
 
 ```python
@@ -174,6 +173,8 @@ def valida_modelo(modelo, y_test, y_pred):
     return metricas, matriz
 ```
 
+Após a definição, a função foi executada para cada modelo já treinado. Os resultados das métricas foram inseridos em um DataFrame do Pandas para melhor visualização, e depois comparados.
+
 ```python
 index = ['Acurácia', 'Precisão', 'Recall', 'F1']
 df = pd.DataFrame(index = index)
@@ -184,11 +185,45 @@ for modelo, resultado in resultados.items():
     disp.plot()
 ```
 
-#### Curva Roc
+img dataframe
+
+Com os resultados, foi possível perceber que o melhor modelo foi o Random Forest Classifier, seguido pelo Logistic Regression e SVC. Para confirmar os testes e escolher o melhor modelo, a curva ROC dos dois melhores modelos foi inserida em um gráfico.
+
+img curva roc
+
+Com a curva ROC calculada, percebeu-se que o modelo Random Forest Classifier obteve os melhores resultados com esse dataset. Com o modelo definido, a etapa seguinte foi validar o modelo utilizando o cross-validate e otimizar o modelo, afim de melhorar os resultados obtidos e evitar o *overfitting*.
 
 ## Otimizando e validando o melhor modelo
 
+Após a definição do melhor modelo, o primeiro passo foi efetuar uma validação cruzada utilizando o método [StratifiedKFold](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html). Depois da validação cruzada, foi necessário ajustar os hiperparâmetros do modelo.
+
 ### Validação cruzada
+
+Para a validação cruzada, foram definidas duas funções. Uma para calcular as métricas utilizando a validação cruzada e outra para exibir a média aritimética dos resultados de acurácia dos dados de treino e teste.
+
+```python
+from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import cross_validate
+
+
+def validacao_cruzada(modelo):
+    cv = StratifiedKFold(n_splits = 10)
+    resultados = cross_validate(modelo, X, y, cv = cv, return_train_score=True)
+    imprime_resultado(resultados)
+```
+
+```python
+def imprime_resultado(resultados):
+
+    acuracia_teste = resultados['test_score'].mean() * 100
+    acuracia_treino = resultados['train_score'].mean() * 100
+
+    print(f'Acurácia: teste = {acuracia_teste:.2f}, treino = {acuracia_treino:.2f}')
+```
+
+Ao ser efetuada, a validação cruzada mostrou que a acurácia do modelo para dados de treino está em 99,80%. Isso pode ser um sinal de *overfitting*, afinal para os dados de teste a acurácia é de 85,24%. Para resolver esse problema, é necessário ajustar os hiperparâmetros do modelo. Apesar da possibilidade dos ajustes serem feitos manualmente, foram utilizados modelos autônomos para encontrar os melhores valores.
+
+Antes de se utilizar os modelos, necessitou-se definir quais os hiperparâmetros seriam otimizados. Os parâmetros foram selecionados de acordo com um [artigo no site da biblioteca ScikitLearn](https://scikit-learn.org/stable/modules/ensemble.html#random-forest-parameters) e também com a [documentação do modelo](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html).
 
 ### RandomizedSearchCV
 
