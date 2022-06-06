@@ -108,6 +108,9 @@ from sklearn.model_selection import train_test_split
 
 SEED = 42
 
+X = dados_balanceados.drop('Evasao', axis = 1)
+y = dados_balanceados['Evasao']
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=SEED, stratify = y)
 ```
 
