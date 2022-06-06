@@ -1,7 +1,6 @@
 # [Semana 1](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/Tratamento_dos_Dados.ipynb)
 
-
-#### Entendendo as informações
+## Entendendo as informações
 
 Com os [dados disponíveis](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados.json), eles foram importados para um [Jupyter Notebook](placement). Porém, foi percebido que as informações necessárias para as análises estavam contidas dentro das colunas do DataFrame original.
 
@@ -37,7 +36,7 @@ Nome da coluna | Dicionário da empresa
 `Charges.Monthly`| total de todos os serviços do cliente por mês
 `Charges.Total`| total gasto pelo cliente
 
-#### Analisando os tipos de dados
+## Analisando os tipos de dados
 
 Após a organização inicial, as colunas foram analisadas com mais clareza. Primeiramente foi verificado se haviam dados em branco com o método [`.info()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.info.html), o que não foi percebido. Após isso, foi definida uma função para a análise de colunas que retornava 3 informações: Valores únicos, contagem dos valores e tipo relacionado à coluna:
 
@@ -70,7 +69,7 @@ Aplicando a função em todas as colunas do DataFrame, foi percebido que:
 
 4. O tipo da coluna `Charges.Total` deve ser alterado para `float64`.
 
-#### Verificando e corrigindo as inconsistências
+## Verificando e corrigindo as inconsistências
 
 Os valores em branco da coluna `Churn` serão divididos em outro arquivo de dados. Esta é a coluna alvo para a empresa, com informações dos clientes que evadiram. Manter os dados em branco nos dados utilizados para exploração visual e criação de modelos de machine learning poderá trazer resultados equivocados. Apesar disso, essas informações podem ser utilizadas após a fase de testes e validação do modelo de machine learning, tendo em vista que o objetivo é encontrar os clientes com maior potencial de fazer o cancelamento do contrato.
 
@@ -84,11 +83,11 @@ Ao tentar alterar o tipo de dados da coluna `Charges.Total` com o método [`.to_
 
 <sub>O DataSet na imagem foi alterado para clareza.</sub>
 
-Analisando com calma, foi percebido que os valores faltantes da coluna correspondem aos clientes que possuem 0 meses na coluna tenure. Para corrigir isso, os valores em branco foi substituido por `0`. 
+Analisando com calma, foi percebido que os valores faltantes da coluna correspondem aos clientes que possuem 0 meses na coluna `Tenure`. Para corrigir isso, os valores em branco foram substituidos por `0`. 
 
 Ao final das correções, as informações puderam ser traduzidas e divididas de acordo com a coluna `Churn`.
 
-#### Traduzindo as colunas
+## Traduzindo as colunas
 
 A tradução das colunas levou em conta a tradução literal, as informações contidas na base de dados e também o dicionário disponibilizado pela empresa.
 
@@ -120,12 +119,12 @@ Nome da coluna | Tradução da coluna | Tipo de variável
 
 Além dos nomes das colunas, também foram traduzidos os dados.
 
-#### Coluna de contas diárias
+## Coluna de contas diárias
 
 A empresa pediu uma coluna extra, com o valor de gasto diário de cada cliente. Para a criação, foi utilizada a coluna `Charges.Monthly` como base e os valores foram dividos por 30, que é a média de dias por mês. O valor foi arredondado par 2 casas decimais, que é o padrão apresentado nas outras colunas de valores monetários presentes na base de dados.
 
 Como o pedido da empresa informava a posição desejada, primeiramente foi criado uma [Series do pandas](https://pandas.pydata.org/docs/reference/api/pandas.Series.html#pandas.Series) para receber os valores. Depois, foi utilizado o método [insert()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.insert.html).
 
-#### Exportando os dados
+## Exportando os dados
 
-Ao final das análises e tratamentos, os dados foram exportados para arquivos csv. Antes da exportação, o dataset foi dividido em 2: o [primeiro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_vazio.csv) recebeu as linhas em que a coluna `Evasao` estava em branco e o [outro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_completos.csv) recebeu as linhas com informação da evasão ou não do cliente..
+Ao final das análises e tratamentos, os dados foram exportados para arquivos csv. Antes da exportação, o dataset foi dividido em 2: o [primeiro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_vazio.csv) recebeu as linhas em que a coluna `Evasao` estava em branco e o [outro](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/dados/dados_evasao_completos.csv) recebeu as linhas com informação da evasão ou não do cliente.
