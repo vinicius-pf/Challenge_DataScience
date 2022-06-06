@@ -1,7 +1,6 @@
 # [Semana 2](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Semana-2/Semana%202/%20Analises_Graficas.ipynb)
 
-
-#### Correção de erros
+## Correção de erros
 
 Durante a limpeza de dados, foi decidido separar os dados que estavam em branco na coluna `Churn`. Isso foi feito, porém não da maneira mais correta. Apesar de não aparecerem valores na coluna, os valores estão presentes como espaço em branco. Para análises futuras, pode ser necessário alterar para valores nulos.
 
@@ -9,7 +8,7 @@ Outro equivoco ocorreu no tratamento de dados faltantes da coluna `Charges.Total
 
 Após a correção desses problemas, a exploração dos dados com análises gráficas poderá seguir com mais clareza.
 
-#### Visualizando a distribuição da variável target
+## Visualizando a distribuição da variável target
 
 Para visualizar a variável target, foram utilizados dois tipos de gráfico: um histograma e um gráfico de pizza.
 
@@ -17,15 +16,15 @@ O histograma é um bom gráfico para comparar distribuições e contagens entre 
 
 <img src="https://user-images.githubusercontent.com/6025360/169667731-df677f15-ef2d-4e99-acfa-5badb6a33759.png" width = 500, height = 500/>
 
-Com o histograma percebe-se que há mais clientes que não evadiram do que clientes evadidos. Para entender melhor a taxa de evasão, pode ser utilizado um gráfico de pizza. Apesar de não ser o mais indicado para análises gráficas, esse tipo de gráfico permite visualizar o percentual com mais cuidado e clareza.
+Com o histograma percebe-se que há mais clientes que não evadiram do que clientes evadidos. Para entender melhor a taxa de evasão, pode ser utilizado um gráfico de pizza.
 
 <img src= "https://user-images.githubusercontent.com/6025360/169667946-75208814-9ef6-43e3-aa5e-6f87ca7f1807.png" width = 500, height = 500/>
 
-Com esses gráficos, é percebido que: 26,5% dos clientes da empresa cancelaram os planos contratados. Apesar da empresa não apresentar metas para a taxa de evasão, a taxa se mostra alta em relação à outros casos.
+Com esses gráficos, é percebido que 26,5% dos clientes da empresa cancelaram os planos contratados. Apesar da empresa não apresentar metas para a taxa de evasão, a taxa se mostra alta em relação à outros casos.
 
 Com a distribuição verificada, pode-se iniciar a próxima etapa e comparar como as outras variáveis do sistema se distribuiem em relação a variável target. 
 
-#### Analisando a correlação entre as variáveis
+## Analisando a correlação entre as variáveis
 
 Antes de fazer as análises com as outras variáveis, foi analisada a correlação entre as mesmas. Primeiro foi utilizado o método [.corr()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html) da biblioteca Pandas. Esse método calcula a correlação entre as variáveis numéricas de um dataset utilizando o método Pearson, podendo esse método ser alterado. Porém, as variáveis presentes no dataset não são apenas numéricas, mas também categóricas. Para contornar esse problema, foi utilizado o módulo python [Dython](http://shakedzy.xyz/dython/). Esse módulo foi criado para facilitar algumas etapas de análise de dados, incluindo um método para o cálculo de correlação entre variáveis numéricas e associação de variáveis categóricas. 
 
@@ -47,15 +46,15 @@ Com a correlação calculada, é possível perceber alguns pontos:
 
 6 - As colunas `Tem_Parceiro` e `Tem_Dependentes` tem uma relação pouco forte entre si. As outras colunas não possuem relação com as variáveis.
 
-#### Analisando a variável Churn em conjunto com outras variáveis
+## Analisando a variável Churn em conjunto com outras variáveis
 
 Para as análises extras da variável target, foram selecionadas algumas colunas que possuem relação forte com a mesma. Para isso, foram criadas visualizações de distribuição e frequência nas colunas `Valor_Mensal`, `Tempo_Contrato`, `Servico_Internet`, `Servico_Telefone`, `Tipo_Contrato`, `Conta_Digital` e `Metodo_Pagamento`.
 
-Analisando a coluna `Valor_Mensal`, se percebe que a média de gastos mensais dos clientes que evadiram a empresa é maior do que aquelas que não cancelaram o contrato. Isso pode ser uma explicação do motivo do cancelamento: descontentamento com o valor pago.
+Analisando a coluna `Valor_Mensal`, se percebe que a média de gastos mensais dos clientes que evadiram a empresa é maior do que aquelas que não cancelaram o contrato. Isso pode ser uma explicação do motivo do cancelamento, com os clientes ficando descontentes com o valor pago e migrando para outra empresa.
 
 <img src = "https://user-images.githubusercontent.com/6025360/169864616-527ea57e-c3e9-4d73-b850-7e478ea63c3a.png" width = 500, height = 500/>
 
-Para a coluna `Tempo_Contrato`, oberva-se que as pessoas que evadiram possuem uma média menor de tempo de contrato, se comparado as pessoas que ficaram na empresa. Com essa informação, foi verificado também a distribuição de evasão de acordo com o tempo de contrato. Ao fazer isso, foi possível entender que para clientes com tempo de contrato menor que 10 meses, há uma taxa de evasão maior do que o resto do dataset. Outro ponto importante foi visualizado: entre os clientes com 1 e 2 meses de contrato, há mais clientes que evadiram a empresa do que estão no momento nela.
+Para a coluna `Tempo_Contrato`, oberva-se que as pessoas que evadiram possuem uma média menor de tempo de contrato, se comparado as pessoas que ficaram na empresa. Com essa informação, foi verificado também a distribuição de evasão de acordo com o tempo de contrato. Ao fazer isso, foi possível entender que para clientes com tempo de contrato menor que 10 meses, há uma taxa de evasão maior do que o resto do dataset. Entre os clientes com 1 e 2 meses de contrato, há mais clientes que evadiram a empresa do que estão no momento nela.
 
 <img src = "https://user-images.githubusercontent.com/6025360/169865056-2ec71e1a-985e-4f64-be7e-64d00ac9d387.png" width = 500, height = 500/>
 
@@ -67,11 +66,11 @@ Para a coluna `Servico_Telefone`, a análise não mostrou diferença de taxa de 
 
 <img src = "https://user-images.githubusercontent.com/6025360/169865211-4d1f7887-88ca-4ec9-901b-acf15639b036.png" width = 500, height = 500/>
 
-Durante a análise da coluna `Tipo_Contrato`, um comportamento parecido com a coluna `Servico_Internet` foi percebido. Clientes que optam por um plano mensal possuem taxa de evasão elevada. No entanto, foi percebido um comportamento diferente nas outras possibilidades também. Clientes com plano anual possuem uma taxa de evasão menor do que aqueles com plano mensal. Já clientes com plano bianual possuem a menor taxa de evasão: apenas 3% dos clientes com plano bianual evadiram da empresa.
+Durante a análise da coluna `Tipo_Contrato`, um comportamento parecido com a coluna `Servico_Internet` foi percebido. Clientes que optam por um plano mensal possuem taxa de evasão elevada. No entanto, foi percebido um comportamento diferente nas outras possibilidades também. Clientes com plano anual possuem uma taxa de evasão menor do que aqueles com plano mensal. Já clientes com plano bianual possuem a menor taxa de evasão, onde apenas 3% dos clientes com plano bianual evadiram da empresa.
 
 <img src = "https://user-images.githubusercontent.com/6025360/169865280-be3224d5-a9a6-446e-8385-9ef5ed6f12db.png" width = 500, height = 500/>
 
-Na coluna `Conta digital`, se percebe uma taxa maior de evasão para clientes que possuem conta digital, enquanto clientes que não possuem o serviço aparentam uma taxa de evasão menor. 
+Na coluna `Conta_Digital`, se percebe uma taxa maior de evasão para clientes que possuem conta digital, enquanto clientes que não possuem o serviço aparentam uma taxa de evasão menor. 
 
 <img src = "https://user-images.githubusercontent.com/6025360/169865352-7b3a4a47-dc27-4ab9-8f81-3c4ea09bc96b.png" width = 500, height = 500/>
 
@@ -79,12 +78,12 @@ Por último, na coluna `Metodo_Pagamento`, aqueles que optam por pagamento via `
 
 <img src = "https://user-images.githubusercontent.com/6025360/169865418-1e03e5de-27ce-4e09-93f1-ba4653404877.png" width = 500, height = 500/>
 
-#### Análises extras
+## Análises extras
 
 Além das análises com a variável target, também foi efetuada uma análise dos clientes que optaram por `Fibra óptica`. Por se tratar de uma tecnologia de mais qualidade do que o outro serviço de internet, se esperava uma taxa de evasão menor por parte desses clientes.
 
 Para essa análise, foi criado um dataset temporário, apenas com os clientes que optaram pelo serviço. Depois, foi calculada novamente a correlação entre as variáveis.
-A correlação não apresentou valores para duas variáveis: `Servico_Internet` e `Servico_Telefone`. Esse comportamento se deu pela quantidade de valores únicos nas categorias: apenas 1. A coluna `Servico_Internet` possuía apenas o valor do filtro, o que era esperado. Já a conta `Servico_Telefone` possuía apenas o valor `Sim`. Isso significa que todos os clientes que possuem serviço de fibra óptica também possuem serviço de telefone.
+A correlação não apresentou valores para duas variáveis: `Servico_Internet` e `Servico_Telefone`. Esse comportamento aconteceu pois apenas. A coluna `Servico_Internet` possuía apenas o valor do filtro, o que era esperado. Já a conta `Servico_Telefone` possuía apenas o valor `Sim`. Isso significa que todos os clientes que possuem serviço de fibra óptica também possuem serviço de telefone.
 
 Com a correlação calculada, se selecionou as colunas que possuíam correlação forte com a variável target. Por isso as colunas `Tipo_Contrato`, `Tempo_Contrato` e `Valor_Total` foram escolhidas.
 
@@ -100,10 +99,8 @@ Por conta da característica `Tempo_Contrato`, a variável `Valor_Total` mostra 
 
 <img src = "https://user-images.githubusercontent.com/6025360/169868454-ba12ec32-0425-4297-aa9f-feabaa765d59.png" width = 500, height = 500/>
 
-#### Concluindo
+## Concluindo
 
-Com as análises completas, pode-se passar para a próxima etapa do projeto: criação, calibração, treinamento e validação de um modelo de machine learning, utilizando esses dados para se encontrar potenciais clientes evadidos da empresa.
+Com as análises concluidas, se percebeu uma necessidade da empresa de focar em clientes que possuem menor tempo de contrato, tendo em vista a alta taxa de evasão dos clientes. Também é necessário que a empresa melhore seu serviço de fibra óptica, seja melhorando o sistema ou diminuindo o preço, para que menos clientes possam vir a cancelar o contrato.
 
-
-
-
+Pode-se passar agora para a próxima etapa do projeto,em que ocorrerá a criação, calibração e validação de um modelo de machine learning que informe a empresa os clientes que possam vir a cancelar o contrato.
