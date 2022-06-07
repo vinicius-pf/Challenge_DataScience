@@ -1,0 +1,225 @@
+ID_Cliente,Evasao,Genero,Eh_Idoso,Tem_Parceiro,Tem_Dependentes,Tempo_Contrato,Servico_Telefone,Linhas_Multiplas,Servico_Internet,Adiconal_Seguranca,Adicional_Backup,Adiconal_Protecao,Adicional_Suporte,Streaming_TV,Streaming_Filmes,Tipo_Contrato,Valor_Dia,Conta_Digital,Metodo_Pagamento,Valor_Mensal,Valor_Total
+0047-ZHDTW,,Feminino,Não,Não,Não,11,Sim,Sim,Fibra Óptica,Sim,Não,Não,Não,Não,Não,Mensal,2.63,Sim,Tranferência bancária (automática),79.0,929.3
+0120-YZLQA,,Masculino,Não,Não,Não,71,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.66,Sim,Cartão de crédito (automática),19.9,1355.1
+0154-QYHJU,,Masculino,Não,Não,Não,29,Sim,Não,DSL,Sim,Sim,Não,Sim,Não,Não,Anual,1.96,Sim,Cheque eletrônico,58.75,1696.2
+0162-RZGMZ,,Feminino,Sim,Não,Não,5,Sim,Não,DSL,Sim,Sim,Não,Sim,Não,Não,Mensal,2.0,Não,Cartão de crédito (automática),59.9,287.85
+0274-VVQOQ,,Masculino,Sim,Sim,Não,65,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Anual,3.44,Sim,Tranferência bancária (automática),103.15,6792.45
+0328-IBUPK,,Feminino,Não,Sim,Sim,51,Não,Sem serviço de telefone,DSL,Sim,Não,Não,Sim,Não,Não,Bianual,1.14,Não,Tranferência bancária (automática),34.2,1782.0
+0448-YZNZE,,Masculino,Sim,Sim,Não,27,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Não,Sim,Mensal,3.18,Sim,Cheque eletrônico,95.55,2510.2
+0510-EXSMQ,,Feminino,Não,Não,Não,9,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.3,Não,Cheque eletrônico,69.05,651.5
+0530-HBKHZ,,Feminino,Sim,Sim,Não,1,Não,Sem serviço de telefone,DSL,Não,Não,Não,Não,Não,Não,Mensal,0.83,Sim,Cheque eletrônico,24.8,24.8
+0534-JRNIG,,Feminino,Não,Não,Não,6,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Sim,Mensal,3.12,Sim,Tranferência bancária (automática),93.55,536.4
+0542-YUDZL,,Feminino,Não,Sim,Sim,14,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.85,Não,Cheque,25.55,372.45
+0548-BCTNE,,Masculino,Não,Não,Não,48,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Anual,3.54,Sim,Cartão de crédito (automática),106.1,5082.8
+0567-DLARH,,Feminino,Não,Sim,Sim,30,Não,Sem serviço de telefone,DSL,Não,Não,Não,Sim,Sim,Sim,Mensal,1.71,Não,Cartão de crédito (automática),51.2,1561.5
+0622-OCUQY,,Masculino,Não,Não,Não,44,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.67,Não,Cheque,20.05,845.25
+0639-QDHAY,,Feminino,Não,Não,Não,22,Sim,Não,Fibra Óptica,Sim,Não,Não,Sim,Não,Sim,Mensal,2.97,Sim,Cheque eletrônico,89.05,1886.25
+0699-XSLUE,,Masculino,Não,Sim,Sim,71,Sim,Sim,DSL,Sim,Não,Sim,Sim,Sim,Sim,Anual,2.85,Não,Cheque eletrônico,85.45,6300.85
+0769-WXZYU,,Masculino,Não,Não,Não,34,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.87,Não,Tranferência bancária (automática),26.1,980.35
+0840-JCCUW,,Feminino,Não,Sim,Não,2,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.5,Sim,Cheque eletrônico,45.0,89.75
+0910-AJOHQ,,Feminino,Não,Não,Não,64,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.84,Sim,Tranferência bancária (automática),115.1,7334.05
+0950-TZGED,,Masculino,Não,Não,Não,56,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.86,Sim,Tranferência bancária (automática),25.95,1444.05
+0968-FTNYZ,,Feminino,Não,Não,Sim,13,Sim,Não,DSL,Sim,Sim,Não,Não,Não,Não,Mensal,1.87,Sim,Cheque eletrônico,56.0,764.55
+1058-CIYUA,,Feminino,Sim,Sim,Não,52,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Anual,3.55,Sim,Cheque eletrônico,106.5,5621.85
+1119-VJAQV,,Masculino,Sim,Sim,Não,6,Sim,Sim,Fibra Óptica,Não,Não,Sim,Não,Não,Não,Mensal,2.69,Sim,Cheque eletrônico,80.8,457.1
+1195-UQFHQ,,Masculino,Não,Não,Não,61,Sim,Sim,Fibra Óptica,Sim,Não,Sim,Não,Sim,Sim,Anual,3.47,Não,Cheque eletrônico,104.0,6363.45
+1232-TPUYA,,Feminino,Sim,Sim,Não,1,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.32,Sim,Cheque eletrônico,69.55,69.55
+1235-GPKNS,,Feminino,Não,Não,Sim,5,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.53,Não,Cheque,46.0,221.7
+1268-VSSGL,,Masculino,Não,Sim,Não,4,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.35,Não,Cheque eletrônico,70.5,294.2
+1289-RKJJR,,Masculino,Não,Não,Não,28,Sim,Não,Fibra Óptica,Não,Não,Sim,Sim,Não,Sim,Mensal,3.03,Não,Cheque eletrônico,91.0,2626.15
+1314-HQHAL,,Masculino,Não,Não,Não,58,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.68,Não,Cartão de crédito (automática),20.3,1131.5
+1370-AQYEM,,Masculino,Não,Sim,Sim,5,Sim,Não,Fibra Óptica,Sim,Não,Sim,Não,Não,Sim,Mensal,3.01,Sim,Cheque,90.35,434.5
+1395-QOUWC,,Feminino,Não,Sim,Sim,22,Sim,Não,DSL,Não,Sim,Não,Não,Sim,Sim,Anual,2.32,Sim,Tranferência bancária (automática),69.5,1498.2
+1427-GOPMO,,Masculino,Não,Não,Não,57,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Não,Anual,2.9,Sim,Cheque eletrônico,86.9,4939.25
+1428-QPOOL,,Feminino,Não,Sim,Sim,65,Sim,Sim,DSL,Sim,Sim,Não,Sim,Sim,Sim,Bianual,2.75,Sim,Tranferência bancária (automática),82.5,5215.1
+1645-EFCGT,,Masculino,Não,Sim,Sim,72,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.65,Não,Cartão de crédito (automática),19.4,1363.25
+1676-BZZYV,,Masculino,Não,Sim,Sim,55,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.65,Não,Cheque,19.5,1026.35
+1736-FCXMC,,Masculino,Não,Não,Não,56,Sim,Sim,Fibra Óptica,Não,Sim,Não,Sim,Não,Sim,Mensal,3.15,Sim,Cheque eletrônico,94.45,5124.6
+1766-UMRDB,,Masculino,Sim,Não,Não,34,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.31,Não,Cartão de crédito (automática),69.15,2275.1
+1867-RAWZK,,Masculino,Não,Sim,Sim,19,Sim,Sim,Fibra Óptica,Não,Não,Sim,Sim,Sim,Sim,Mensal,3.44,Não,Cheque eletrônico,103.3,2012.7
+1972-RSMOV,,Feminino,Não,Sim,Não,40,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.64,Não,Cheque,19.1,780.1
+1975-FCJTE,,Feminino,Não,Sim,Não,45,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.85,Não,Cheque,25.5,1121.05
+2183-ZULVZ,,Feminino,Não,Sim,Sim,70,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.84,Sim,Cartão de crédito (automática),115.15,8250.0
+2353-VPYNS,,Masculino,Sim,Não,Não,1,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.46,Sim,Cheque eletrônico,73.65,73.65
+2424-GXJQO,,Feminino,Não,Não,Não,3,Sim,Não,DSL,Não,Não,Sim,Não,Sim,Não,Mensal,1.92,Não,Cheque eletrônico,57.55,161.45
+2508-QJJFP,,Masculino,Não,Não,Sim,47,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.68,Não,Cartão de crédito (automática),20.55,1013.05
+2550-ZQZPP,,Masculino,Sim,Sim,Não,7,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.51,Sim,Cheque eletrônico,75.4,533.05
+2575-EAMDV,,Feminino,Não,Não,Não,35,Sim,Não,Fibra Óptica,Não,Não,Sim,Sim,Sim,Sim,Anual,3.31,Sim,Cheque eletrônico,99.25,3532.0
+2599-GTQWQ,,Masculino,Sim,Não,Não,39,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Sim,Mensal,3.19,Sim,Tranferência bancária (automática),95.65,3759.05
+2642-NQSNM,,Feminino,Não,Não,Não,8,Sim,Não,DSL,Sim,Não,Não,Sim,Não,Não,Anual,1.81,Não,Tranferência bancária (automática),54.25,447.75
+2672-SXZJB,,Feminino,Não,Sim,Sim,56,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.66,Sim,Cartão de crédito (automática),19.8,1119.9
+2855-QOWGP,,Masculino,Não,Não,Sim,34,Sim,Sim,Fibra Óptica,Sim,Sim,Não,Não,Sim,Sim,Anual,3.46,Sim,Cheque eletrônico,103.8,3470.8
+2956-MHLSX,,Masculino,Não,Não,Não,1,Sim,Não,DSL,Não,Sim,Não,Não,Não,Não,Mensal,1.69,Não,Cheque eletrônico,50.8,50.8
+2991-OKAXW,,Masculino,Não,Não,Não,44,Não,Sem serviço de telefone,DSL,Não,Sim,Sim,Não,Sim,Sim,Anual,1.8,Sim,Cheque,53.95,2375.4
+3007-KYUNZ,,Feminino,Não,Sim,Sim,19,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.85,Não,Cheque,25.6,485.9
+3012-OALWM,,Masculino,Não,Não,Não,9,Sim,Não,Fibra Óptica,Sim,Não,Não,Não,Não,Não,Mensal,2.52,Não,Cheque eletrônico,75.6,661.55
+3018-DZHFE,,Masculino,Não,Não,Não,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.65,Não,Cheque,19.55,19.55
+3078-NDXXG,,Feminino,Não,Não,Não,44,Sim,Sim,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.67,Sim,Cheque,50.15,2139.1
+3134-JCVOE,,Feminino,Não,Não,Não,3,Não,Sem serviço de telefone,DSL,Não,Sim,Não,Não,Não,Não,Mensal,0.97,Não,Cheque,29.2,98.5
+3161-PJNCN,,Feminino,Sim,Sim,Não,67,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.67,Sim,Tranferência bancária (automática),20.05,1263.05
+3337-EUOON,,Masculino,Não,Sim,Sim,69,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.87,Sim,Tranferência bancária (automática),26.0,1796.55
+3345-CSCIA,,Masculino,Não,Não,Não,68,Sim,Sim,DSL,Sim,Sim,Sim,Não,Não,Sim,Anual,2.56,Sim,Cartão de crédito (automática),76.9,5023.0
+3394-UQYIB,,Feminino,Sim,Sim,Não,2,Sim,Não,DSL,Não,Sim,Não,Não,Não,Não,Mensal,1.67,Não,Cartão de crédito (automática),50.15,115.1
+3443-KUJWU,,Masculino,Não,Sim,Não,47,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Mensal,3.47,Sim,Cheque eletrônico,104.1,5135.15
+3485-REZCX,,Masculino,Não,Não,Não,64,Sim,Sim,Fibra Óptica,Sim,Sim,Não,Não,Não,Não,Anual,2.81,Sim,Cartão de crédito (automática),84.3,5289.05
+3590-DWSLF,,Feminino,Não,Não,Não,70,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Anual,3.85,Não,Cartão de crédito (automática),115.55,8127.6
+3601-UTZXO,,Masculino,Não,Sim,Sim,41,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.65,Não,Tranferência bancária (automática),19.5,798.2
+3643-VBLHT,,Masculino,Não,Não,Sim,29,Não,Sem serviço de telefone,DSL,Sim,Sim,Sim,Sim,Não,Não,Mensal,1.5,Sim,Cheque,45.0,1242.45
+3660-ENEST,,Feminino,Sim,Sim,Não,72,Sim,Sim,DSL,Sim,Sim,Sim,Não,Sim,Sim,Bianual,2.8,Sim,Cartão de crédito (automática),84.1,6129.65
+3680-ISIKN,,Masculino,Não,Não,Não,22,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.84,Não,Cheque,25.25,566.5
+3728-SDRGN,,Masculino,Não,Não,Sim,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.64,Não,Cheque,19.25,19.25
+3775-TDLCC,,Masculino,Não,Sim,Sim,67,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Não,Não,Anual,2.91,Não,Cheque eletrônico,87.4,5918.8
+3781-LIPVO,,Feminino,Não,Sim,Não,7,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Não,Mensal,2.88,Sim,Cheque eletrônico,86.5,582.5
+3803-QHPWH,,Feminino,Sim,Sim,Não,29,Não,Sem serviço de telefone,DSL,Sim,Não,Sim,Não,Não,Sim,Mensal,1.5,Sim,Cheque eletrônico,45.0,1228.65
+3995-RWMUH,,Masculino,Não,Não,Não,7,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.49,Sim,Tranferência bancária (automática),44.65,322.5
+4047-GGUUG,,Feminino,Não,Não,Não,12,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.65,Não,Tranferência bancária (automática),19.45,227.45
+4060-BTPXO,,Feminino,Não,Sim,Não,67,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Anual,3.52,Sim,Tranferência bancária (automática),105.7,6816.95
+4087-ULYNQ,,Feminino,Não,Sim,Sim,47,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.68,Não,Cartão de crédito (automática),20.25,873.4
+4102-BEFEK,,Masculino,Não,Não,Não,62,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.67,Sim,Cartão de crédito (automática),20.05,1201.65
+4123-VPQTQ,,Feminino,Não,Não,Não,3,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.65,Não,Cheque eletrônico,19.55,61.05
+4140-TOILV,,Masculino,Não,Sim,Não,22,Sim,Não,Fibra Óptica,Não,Não,Sim,Não,Sim,Não,Mensal,2.9,Sim,Tranferência bancária (automática),87.0,1850.65
+4250-QVQRU,,Masculino,Não,Não,Sim,2,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.64,Não,Cheque,19.25,48.35
+4268-YNAHK,,Masculino,Não,Não,Sim,33,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.67,Sim,Cheque,20.15,682.15
+4290-UZSKY,,Feminino,Não,Não,Não,4,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Sim,Não,Mensal,2.63,Sim,Cheque eletrônico,79.0,303.15
+4438-GGYWL,,Masculino,Não,Sim,Sim,62,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.85,Não,Tranferência bancária (automática),115.55,7159.05
+4468-MLDTH,,Masculino,Não,Não,Não,4,Sim,Não,DSL,Não,Não,Não,Sim,Sim,Não,Mensal,2.04,Sim,Cheque eletrônico,61.3,249.4
+4471-OIIDG,,Feminino,Não,Não,Não,10,Sim,Sim,Fibra Óptica,Não,Não,Sim,Não,Sim,Sim,Mensal,3.35,Sim,Cheque eletrônico,100.6,1060.2
+4477-QAXWD,,Masculino,Não,Sim,Não,25,Não,Sem serviço de telefone,DSL,Não,Não,Sim,Não,Sim,Não,Anual,1.27,Sim,Cartão de crédito (automática),38.1,970.4
+4498-WRAJX,,Masculino,Sim,Sim,Sim,71,Sim,Sim,Fibra Óptica,Sim,Sim,Não,Não,Sim,Sim,Mensal,3.5,Sim,Cartão de crédito (automática),105.1,7548.1
+4536-IPCKQ,,Masculino,Não,Não,Não,56,Sim,Sim,Fibra Óptica,Não,Sim,Não,Não,Sim,Sim,Mensal,3.29,Não,Cheque eletrônico,98.6,5581.05
+4555-YIGPD,,Feminino,Não,Não,Sim,4,Não,Sem serviço de telefone,DSL,Sim,Sim,Sim,Não,Sim,Sim,Mensal,1.91,Sim,Cheque,57.2,223.75
+4585-XOMAN,,Masculino,Sim,Sim,Não,34,Sim,Não,Fibra Óptica,Não,Não,Sim,Não,Sim,Não,Mensal,2.84,Sim,Cartão de crédito (automática),85.2,2874.45
+4603-FDONU,,Feminino,Não,Sim,Sim,32,Não,Sem serviço de telefone,DSL,Sim,Sim,Não,Não,Não,Não,Mensal,1.17,Sim,Cheque eletrônico,35.15,1051.05
+4610-WUVVT,,Masculino,Sim,Sim,Sim,46,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Não,Sim,Não,Mensal,3.36,Sim,Cheque eletrônico,100.7,4541.2
+4626-JYHAY,,Feminino,Sim,Não,Não,20,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Não,Sim,Mensal,3.14,Sim,Cheque eletrônico,94.1,1782.4
+4674-LRJIC,,Feminino,Não,Não,Não,1,Sim,Não,Fibra Óptica,Não,Não,Sim,Não,Sim,Sim,Mensal,3.15,Não,Cheque eletrônico,94.4,94.4
+4691-NEWPF,,Masculino,Não,Sim,Não,11,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.53,Sim,Tranferência bancária (automática),45.9,521.9
+4762-XTUEC,,Feminino,Não,Sim,Não,67,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Sim,Sim,Sim,Anual,3.66,Sim,Cartão de crédito (automática),109.7,7344.45
+4805-ZRGEZ,,Masculino,Sim,Sim,Não,61,Sim,Sim,DSL,Não,Sim,Não,Não,Não,Sim,Anual,2.13,Não,Tranferência bancária (automática),64.05,3902.6
+4878-SMQBX,,Feminino,Não,Não,Não,2,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.62,Não,Tranferência bancária (automática),18.75,53.15
+4946-VTTND,,Masculino,Não,Sim,Não,8,Sim,Não,Fibra Óptica,Sim,Não,Não,Não,Não,Não,Mensal,2.5,Sim,Cheque,75.0,658.1
+4988-BNLTU,,Masculino,Não,Não,Não,30,Sim,Sim,Fibra Óptica,Sim,Não,Não,Não,Sim,Sim,Mensal,3.35,Sim,Tranferência bancária (automática),100.4,2936.25
+4988-RZJHG,,Feminino,Não,Sim,Não,8,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.83,Sim,Cheque eletrônico,84.9,764.95
+5083-QPLHM,,Masculino,Não,Sim,Sim,14,Sim,Não,DSL,Sim,Sim,Não,Não,Sim,Não,Mensal,2.18,Sim,Cheque eletrônico,65.45,937.6
+5134-RCXTN,,Feminino,Sim,Sim,Não,50,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.84,Não,Cheque eletrônico,25.2,1306.3
+5206-YQKMK,,Feminino,Não,Não,Não,25,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.82,Não,Cartão de crédito (automática),24.75,692.1
+5235-XATIX,,Masculino,Não,Não,Sim,22,Sim,Não,Fibra Óptica,Não,Sim,Sim,Não,Sim,Não,Mensal,2.98,Sim,Cheque eletrônico,89.4,2001.5
+5243-NIEIT,,Masculino,Não,Sim,Não,14,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.84,Sim,Cheque eletrônico,85.15,1139.2
+5264-IWHMU,,Masculino,Não,Não,Não,1,Sim,Não,DSL,Não,Não,Não,Sim,Não,Não,Mensal,1.64,Não,Cheque,49.05,49.05
+5285-TWCNP,,Feminino,Sim,Não,Não,70,Sim,Sim,DSL,Não,Sim,Sim,Sim,Sim,Não,Bianual,2.52,Sim,Tranferência bancária (automática),75.5,5212.65
+5332-UJJBL,,Masculino,Não,Não,Não,4,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.63,Não,Cheque,19.0,73.45
+5365-FJKGQ,,Masculino,Não,Não,Não,25,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.37,Não,Cheque,70.95,1767.35
+5425-GQTTT,,Masculino,Não,Sim,Sim,68,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.8,Sim,Tranferência bancária (automática),24.0,1664.3
+5499-MBERC,,Masculino,Não,Não,Não,3,Não,Sem serviço de telefone,DSL,Não,Sim,Não,Não,Não,Não,Mensal,0.99,Sim,Cheque eletrônico,29.6,79.45
+5570-ZGMEU,,Masculino,Não,Sim,Sim,72,Sim,Não,Fibra Óptica,Sim,Não,Sim,Sim,Sim,Sim,Bianual,3.5,Sim,Cartão de crédito (automática),104.9,7559.55
+5585-WEFDD,,Feminino,Não,Sim,Sim,4,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.68,Não,Cheque,20.35,76.35
+5653-ITXJK,,Feminino,Não,Sim,Não,31,Sim,Não,DSL,Não,Não,Não,Sim,Não,Não,Mensal,1.64,Sim,Cheque,49.2,1498.55
+5761-BYYZA,,Feminino,Não,Sim,Sim,38,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.65,Não,Cartão de crédito (automática),19.6,763.1
+5766-RLNAM,,Masculino,Não,Sim,Não,72,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.85,Sim,Cheque eletrônico,115.55,8425.3
+5888-TLMCL,,Feminino,Não,Sim,Sim,69,Não,Sem serviço de telefone,DSL,Não,Sim,Sim,Não,Sim,Sim,Bianual,1.83,Sim,Cartão de crédito (automática),54.95,3772.5
+5943-PWAPA,,Feminino,Não,Sim,Não,53,Sim,Não,Fibra Óptica,Não,Não,Não,Sim,Sim,Sim,Anual,3.12,Sim,Cheque eletrônico,93.45,4872.2
+6016-EJGNT,,Feminino,Não,Sim,Sim,48,Sim,Sim,Fibra Óptica,Sim,Sim,Não,Não,Sim,Sim,Anual,3.44,Sim,Cartão de crédito (automática),103.25,5037.55
+6016-QSKVI,,Masculino,Não,Não,Não,4,Sim,Não,Fibra Óptica,Sim,Sim,Não,Sim,Não,Sim,Mensal,3.16,Sim,Cheque,94.9,360.55
+6022-MXOMF,,Feminino,Sim,Não,Não,1,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.47,Sim,Cheque eletrônico,74.2,74.2
+6037-WPJRP,,Feminino,Não,Não,Não,13,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.5,Sim,Cheque,75.0,999.45
+6039-RVSJV,,Feminino,Não,Não,Não,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.66,Não,Cheque,19.85,19.85
+6072-YUBLX,,Masculino,Sim,Sim,Não,61,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Sim,Sim,Não,Anual,3.28,Sim,Cheque,98.3,6066.55
+6167-SYRNG,,Masculino,Sim,Sim,Não,59,Não,Sem serviço de telefone,DSL,Sim,Não,Sim,Sim,Sim,Sim,Bianual,2.13,Sim,Cartão de crédito (automática),64.05,3886.85
+6225-VNQSJ,,Masculino,Não,Não,Não,1,Não,Sem serviço de telefone,DSL,Não,Não,Não,Não,Não,Sim,Mensal,1.18,Sim,Cheque eletrônico,35.45,35.45
+6271-PRTUU,,Feminino,Não,Sim,Sim,28,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.65,Sim,Tranferência bancária (automática),19.55,543.8
+6272-HWGNQ,,Feminino,Não,Não,Não,1,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.83,Sim,Cheque eletrônico,85.0,85.0
+6303-APKJD,,Masculino,Sim,Sim,Não,57,Sim,Sim,Fibra Óptica,Não,Sim,Não,Não,Não,Sim,Mensal,2.99,Sim,Cheque eletrônico,89.85,4925.35
+6319-ZXCPZ,,Masculino,Não,Sim,Não,60,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Não,Mensal,3.19,Sim,Cheque eletrônico,95.75,5742.9
+6381-LOPCO,,Masculino,Não,Não,Não,1,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.33,Sim,Cheque eletrônico,69.8,69.8
+6385-MVEPL,,Masculino,Não,Sim,Sim,64,Sim,Não,DSL,Sim,Não,Sim,Sim,Sim,Não,Bianual,2.31,Não,Cheque,69.25,4447.75
+6463-CCMII,,Masculino,Não,Não,Não,34,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.66,Não,Cheque,19.7,675.6
+6507-MIKMI,,Feminino,Não,Não,Não,41,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Mensal,3.54,Sim,Cheque eletrônico,106.3,4443.45
+6508-TFQQW,,Masculino,Sim,Sim,Não,1,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.34,Sim,Cheque eletrônico,70.3,70.3
+6519-JNHOZ,,Feminino,Não,Sim,Não,48,Sim,Não,DSL,Não,Sim,Sim,Não,Não,Sim,Anual,2.19,Sim,Cheque eletrônico,65.65,3094.65
+6532-YOHZY,,Masculino,Não,Sim,Sim,45,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Sim,Sim,Sim,Bianual,3.66,Sim,Tranferência bancária (automática),109.75,4900.65
+6547-ETRKK,,Feminino,Não,Sim,Não,53,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.69,Não,Tranferência bancária (automática),20.8,1021.8
+6554-ONRKJ,,Masculino,Não,Não,Sim,39,Não,Sem serviço de telefone,DSL,Não,Não,Sim,Sim,Sim,Sim,Anual,1.83,Não,Tranferência bancária (automática),54.85,2191.7
+6648-RXFRG,,Masculino,Não,Não,Não,7,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.89,Sim,Cheque eletrônico,86.8,620.35
+6724-JVHVX,,Masculino,Não,Não,Sim,9,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.68,Não,Cheque,20.4,184.1
+6736-DRVEW,,Feminino,Sim,Não,Não,33,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Sim,Sim,Sim,Mensal,3.68,Sim,Cheque eletrônico,110.45,3655.45
+6750-FCEKS,,Masculino,Não,Não,Não,2,Não,Sem serviço de telefone,DSL,Não,Não,Não,Sim,Não,Não,Mensal,1.0,Não,Tranferência bancária (automática),29.85,75.6
+6807-HWZBE,,Masculino,Não,Sim,Não,2,Sim,Sim,Fibra Óptica,Não,Não,Sim,Não,Sim,Não,Mensal,3.05,Sim,Cheque eletrônico,91.45,171.45
+6820-THWHI,,Feminino,Sim,Sim,Não,72,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.81,Não,Tranferência bancária (automática),24.3,1778.7
+6831-CJPWG,,Masculino,Não,Sim,Não,54,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Não,Sim,Sim,Mensal,3.65,Não,Cheque eletrônico,109.55,6118.95
+6840-YEOYJ,,Masculino,Não,Não,Sim,53,Sim,Não,DSL,Sim,Sim,Não,Sim,Não,Não,Anual,2.1,Não,Cartão de crédito (automática),62.85,3419.5
+6895-ZJKIO,,Feminino,Não,Não,Não,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.66,Não,Tranferência bancária (automática),19.9,19.9
+7026-TPCZX,,Masculino,Não,Sim,Sim,69,Sim,Não,Fibra Óptica,Sim,Sim,Não,Sim,Sim,Sim,Bianual,3.54,Sim,Cartão de crédito (automática),106.35,7261.75
+7069-PURBI,,Feminino,Não,Sim,Não,14,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.68,Não,Cheque,20.4,292.4
+7115-SIPGA,,Masculino,Não,Não,Sim,69,Sim,Sim,DSL,Sim,Sim,Sim,Sim,Sim,Não,Bianual,2.65,Sim,Cartão de crédito (automática),79.45,5502.55
+7117-EVURU,,Masculino,Não,Não,Não,39,Não,Sem serviço de telefone,DSL,Sim,Sim,Não,Sim,Sim,Não,Mensal,1.63,Sim,Cartão de crédito (automática),48.95,1880.85
+7132-EASOG,,Masculino,Não,Sim,Sim,7,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.69,Não,Cheque,20.65,150.0
+7165-CNJFG,,Masculino,Sim,Sim,Não,35,Sim,Sim,Fibra Óptica,Sim,Sim,Não,Não,Não,Sim,Mensal,3.15,Sim,Cheque eletrônico,94.55,3365.4
+7278-VXADF,,Masculino,Sim,Sim,Não,16,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Não,Mensal,2.84,Sim,Cartão de crédito (automática),85.05,1391.15
+7295-EXSMO,,Feminino,Sim,Não,Não,3,Sim,Não,Fibra Óptica,Não,Não,Sim,Não,Não,Não,Mensal,2.5,Não,Cheque,75.05,202.9
+7305-PAPOZ,,Feminino,Sim,Sim,Não,31,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.83,Sim,Cheque eletrônico,84.85,2633.4
+7340-EBEMV,,Masculino,Não,Sim,Não,29,Sim,Sim,Fibra Óptica,Não,Sim,Não,Não,Não,Não,Mensal,2.67,Sim,Tranferência bancária (automática),80.15,2265.25
+7372-IVBIM,,Masculino,Não,Sim,Sim,4,Sim,Não,DSL,Não,Não,Não,Sim,Não,Sim,Mensal,2.05,Não,Cartão de crédito (automática),61.45,229.55
+7432-XWSQO,,Feminino,Não,Sim,Não,71,Sim,Sim,DSL,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.0,Não,Cheque eletrônico,90.1,6310.9
+7455-SDALK,,Masculino,Não,Sim,Sim,29,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.36,Sim,Cheque eletrônico,70.75,1974.8
+7491-UYKGO,,Feminino,Sim,Não,Não,53,Sim,Não,Fibra Óptica,Sim,Sim,Não,Sim,Não,Sim,Anual,3.22,Sim,Cheque,96.75,5206.55
+7586-NHQEA,,Feminino,Não,Não,Não,10,Não,Sem serviço de telefone,DSL,Não,Não,Não,Sim,Não,Não,Bianual,0.99,Sim,Cheque,29.6,299.05
+7606-GWMKE,,Masculino,Não,Não,Sim,21,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.82,Não,Cheque,24.7,467.15
+7637-IKUJQ,,Masculino,Não,Sim,Não,57,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Não,Mensal,3.44,Sim,Cheque eletrônico,103.05,5925.75
+7662-TWISV,,Feminino,Não,Não,Sim,51,Não,Sem serviço de telefone,DSL,Sim,Não,Sim,Sim,Sim,Sim,Anual,2.0,Não,Tranferência bancária (automática),60.15,3077.0
+7709-FQREH,,Feminino,Não,Sim,Não,18,Sim,Sim,Fibra Óptica,Não,Não,Não,Sim,Sim,Não,Mensal,2.96,Sim,Cheque eletrônico,88.85,1594.75
+7766-CVTAF,,Masculino,Não,Sim,Sim,43,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.81,Não,Cheque,24.25,1077.95
+7808-NBWYW,,Feminino,Sim,Sim,Não,3,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Sim,Não,Mensal,2.68,Sim,Cheque eletrônico,80.4,224.05
+7846-AXWOM,,Feminino,Não,Sim,Sim,69,Não,Sem serviço de telefone,DSL,Sim,Não,Sim,Não,Não,Sim,Bianual,1.46,Sim,Cartão de crédito (automática),43.95,2960.1
+7968-BCBQB,,Feminino,Não,Não,Não,3,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.48,Não,Tranferência bancária (automática),74.4,215.8
+7979-YHUFG,,Masculino,Não,Não,Não,8,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.34,Sim,Cheque,70.1,551.35
+8029-GAHZZ,,Feminino,Sim,Sim,Não,71,Sim,Não,Fibra Óptica,Sim,Sim,Sim,Sim,Sim,Sim,Bianual,3.66,Sim,Tranferência bancária (automática),109.7,7904.25
+8212-FSQIV,,Masculino,Não,Não,Sim,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.68,Sim,Cheque,20.25,20.25
+8256-ERHVS,,Masculino,Não,Não,Não,9,Sim,Não,DSL,Sim,Não,Sim,Sim,Não,Sim,Mensal,2.28,Sim,Tranferência bancária (automática),68.25,576.95
+8256-TWSNM,,Masculino,Não,Sim,Sim,6,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.33,Sim,Cheque eletrônico,69.8,377.85
+8289-DXCFQ,,Feminino,Não,Não,Não,1,Sim,Sim,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.67,Sim,Cheque,50.1,50.1
+8353-CFNVI,,Masculino,Não,Não,Não,43,Sim,Sim,Fibra Óptica,Não,Não,Não,Sim,Sim,Sim,Anual,3.33,Sim,Cheque eletrônico,100.0,4211.55
+8386-OSYMC,,Feminino,Não,Sim,Sim,58,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Anual,3.51,Sim,Cartão de crédito (automática),105.2,6225.4
+8530-KXSOX,,Masculino,Não,Sim,Não,68,Sim,Sim,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.84,Não,Tranferência bancária (automática),25.25,1728.2
+8649-VYTUC,,Masculino,Não,Não,Não,24,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Sim,Sim,Mensal,3.01,Sim,Cheque eletrônico,90.35,2238.5
+8732-BBLMG,,Feminino,Não,Não,Não,5,Não,Sem serviço de telefone,DSL,Não,Sim,Não,Não,Sim,Sim,Mensal,1.7,Sim,Cartão de crédito (automática),50.95,229.4
+8754-GZCEH,,Feminino,Não,Sim,Não,25,Sim,Não,Fibra Óptica,Não,Não,Não,Sim,Sim,Sim,Mensal,3.17,Sim,Cheque eletrônico,95.15,2395.7
+8774-QWEBD,,Masculino,Não,Sim,Sim,40,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.68,Sim,Tranferência bancária (automática),20.4,745.3
+8793-IZZRV,,Masculino,Não,Não,Não,4,Não,Sem serviço de telefone,DSL,Não,Não,Não,Não,Sim,Sim,Mensal,1.48,Sim,Cheque eletrônico,44.55,174.3
+8920-VTVET,,Feminino,Não,Não,Não,68,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.67,Não,Tranferência bancária (automática),20.05,1386.9
+8933-FSHGW,,Feminino,Sim,Sim,Não,25,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.31,Sim,Cheque eletrônico,69.3,1813.1
+8937-FVBIE,,Masculino,Não,Sim,Não,67,Sim,Não,Fibra Óptica,Sim,Sim,Não,Não,Não,Sim,Anual,3.02,Sim,Cartão de crédito (automática),90.6,6056.15
+8939-ORHIW,,Masculino,Não,Sim,Sim,34,Não,Sem serviço de telefone,DSL,Não,Não,Sim,Sim,Sim,Não,Mensal,1.5,Sim,Cheque eletrônico,44.85,1442.6
+8954-HKVWG,,Feminino,Não,Sim,Não,2,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.49,Sim,Cartão de crédito (automática),44.6,80.55
+8977-NIXDF,,Masculino,Não,Sim,Sim,9,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.65,Não,Cheque,19.6,197.4
+9078-GDRPJ,,Feminino,Não,Sim,Sim,63,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Não,Sim,Não,Mensal,3.35,Sim,Cheque eletrônico,100.55,6215.35
+9162-MVWXH,,Masculino,Não,Não,Não,1,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.52,Sim,Cheque,45.7,45.7
+9182-EFTQG,,Feminino,Não,Sim,Sim,41,Sim,Sim,DSL,Sim,Sim,Sim,Não,Sim,Não,Anual,2.61,Sim,Cartão de crédito (automática),78.35,3211.2
+9218-TUMIQ,,Feminino,Não,Sim,Sim,62,Sim,Não,Fibra Óptica,Não,Sim,Sim,Não,Sim,Sim,Mensal,3.34,Sim,Cheque eletrônico,100.15,6283.3
+9228-KNQVN,,Feminino,Não,Sim,Não,59,Sim,Sim,Fibra Óptica,Sim,Sim,Sim,Sim,Não,Sim,Anual,3.57,Sim,Cartão de crédito (automática),107.0,6152.3
+9239-YGYBO,,Feminino,Não,Sim,Sim,13,Sim,Não,DSL,Sim,Não,Não,Sim,Não,Não,Anual,1.8,Não,Tranferência bancária (automática),54.15,701.05
+9243-TUYBL,,Masculino,Sim,Sim,Não,28,Sim,Sim,Fibra Óptica,Não,Sim,Não,Sim,Sim,Sim,Mensal,3.53,Sim,Cheque eletrônico,105.8,2998.0
+9364-HVJRK,,Masculino,Não,Não,Não,8,Sim,Não,DSL,Não,Não,Não,Não,Não,Não,Mensal,1.5,Sim,Cheque,45.15,438.4
+9366-PGOCJ,,Masculino,Não,Não,Não,57,Sim,Não,DSL,Não,Sim,Não,Sim,Não,Não,Anual,1.82,Sim,Cheque,54.65,3134.7
+9371-CLMGW,,Feminino,Não,Não,Não,6,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Sim,Sim,Mensal,2.98,Não,Cheque eletrônico,89.3,577.6
+9395-RFMFG,,Masculino,Não,Sim,Sim,8,Sim,Não,DSL,Não,Não,Não,Não,Sim,Não,Mensal,1.81,Sim,Cheque eletrônico,54.4,475.1
+9456-ETVCM,,Masculino,Não,Não,Não,12,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Sim,Sim,Mensal,3.15,Não,Cheque eletrônico,94.55,1173.55
+9477-UIFFV,,Masculino,Não,Não,Não,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.68,Não,Cheque,20.3,20.3
+9499-EBKUR,,Masculino,Não,Não,Não,72,Sim,Sim,DSL,Sim,Não,Sim,Sim,Sim,Sim,Bianual,2.81,Não,Cartão de crédito (automática),84.3,5997.1
+9525-DKUVP,,Feminino,Sim,Sim,Não,72,Sim,Sim,Fibra Óptica,Não,Sim,Sim,Sim,Sim,Sim,Bianual,3.69,Sim,Cartão de crédito (automática),110.8,7882.25
+9526-MJRPO,,Feminino,Sim,Sim,Não,27,Sim,Sim,Fibra Óptica,Sim,Não,Não,Sim,Sim,Sim,Mensal,3.48,Sim,Tranferência bancária (automática),104.3,2867.75
+9617-SHSHO,,Feminino,Não,Não,Não,53,Sim,Não,Fibra Óptica,Não,Sim,Sim,Sim,Não,Sim,Anual,3.15,Sim,Cartão de crédito (automática),94.45,5042.75
+9640-HXEAM,,Masculino,Não,Não,Não,2,Não,Sem serviço de telefone,DSL,Não,Sim,Sim,Sim,Não,Não,Mensal,1.35,Sim,Cartão de crédito (automática),40.4,77.15
+9646-QWDSB,,Feminino,Não,Sim,Sim,71,Sim,Sim,Fibra Óptica,Sim,Não,Sim,Sim,Não,Sim,Bianual,3.35,Não,Cheque eletrônico,100.45,7159.7
+9659-UDJIJ,,Feminino,Não,Sim,Não,67,Sim,Sim,DSL,Sim,Sim,Sim,Não,Não,Não,Bianual,2.19,Não,Cheque,65.65,4322.85
+9683-PSOSX,,Feminino,Não,Não,Não,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.65,Sim,Cheque,19.55,19.55
+9708-TKNTZ,,Feminino,Não,Sim,Sim,6,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Anual,0.66,Não,Cheque,19.7,94.45
+9717-WXVSB,,Masculino,Não,Não,Não,1,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.63,Não,Cheque,18.9,18.9
+9722-ZVQUQ,,Feminino,Não,Sim,Sim,14,Sim,Não,Fibra Óptica,Não,Não,Não,Não,Não,Sim,Mensal,2.7,Sim,Tranferência bancária (automática),80.9,1152.8
+9724-BFUOP,,Feminino,Não,Não,Não,8,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.49,Sim,Cartão de crédito (automática),74.6,548.9
+9825-GXXPV,,Masculino,Não,Sim,Sim,59,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.65,Não,Cheque,19.5,1147.85
+9839-SEMQN,,Masculino,Não,Sim,Sim,5,Sim,Sim,DSL,Sim,Sim,Não,Sim,Não,Não,Mensal,2.15,Não,Cartão de crédito (automática),64.4,316.9
+9840-GSRFX,,Feminino,Não,Não,Não,14,Sim,Sim,DSL,Não,Sim,Não,Não,Não,Não,Anual,1.81,Sim,Cheque,54.25,773.2
+9872-RZQQB,,Feminino,Não,Sim,Não,49,Não,Sem serviço de telefone,DSL,Sim,Não,Não,Não,Sim,Não,Mensal,1.36,Não,Tranferência bancária (automática),40.65,2070.75
+9920-GNDMB,,Masculino,Não,Não,Não,9,Sim,Sim,Fibra Óptica,Não,Não,Não,Não,Não,Não,Mensal,2.54,Sim,Cheque eletrônico,76.25,684.85
+9955-RVWSC,,Feminino,Não,Sim,Sim,67,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Bianual,0.64,Sim,Tranferência bancária (automática),19.25,1372.9
+9966-VYRTZ,,Feminino,Não,Sim,Sim,31,Sim,Não,Não,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Sem serviço de internet,Mensal,0.65,Sim,Cheque,19.55,658.95
