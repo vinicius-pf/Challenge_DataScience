@@ -37,11 +37,13 @@ Durante as análises, foi percebido um desbalanceamento da variável target, ass
 
 ### Semana 3 Exterminando o futuro
 
-[Link para o notebook](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Semana-2/Semana%202/%20Analises_Graficas.ipynb)
+[Link para o notebook](https://github.com/vinicius-pf/Challenge_DataScience/blob/Semana-3/Semana%203%20e%204/Semana_3.ipynb)
 
-Na terceira e última semana, a empresa demandou que fosse criado, otimizado e validado um modelo de machine learning que pudesse prever se um cliente irá ou não cancelar seu contrato com a empresa. Para que a demanda pudesse ser alcançada, foi utilizada a biblioteca [Pandas-profilling]() para análise rápida dos dados. Com isso se percebeu a necessidade da remoção das colunas `ID_Cliente`, por haver apenas valores únicos, e `Valor_Dia` e `Valor_Total` por terem alta correlação com a variável `Valor_Mensal`. Após isso, foram aplicadas técnicas de *encoding* e balanceamento dos dados com *oversampling*.
+Na terceira e última semana, a empresa demandou que fosse criado, otimizado e validado um modelo de machine learning que pudesse prever se um cliente irá ou não cancelar seu contrato com a empresa. Para que a demanda pudesse ser alcançada, foi utilizada a biblioteca [Pandas-profilling](https://pypi.org/project/pandas-profiling/) para análise rápida dos dados. Com isso se percebeu a necessidade da remoção das colunas `ID_Cliente`, por haver apenas valores únicos, e `Valor_Dia` e `Valor_Total` por terem alta correlação com a variável `Valor_Mensal`. Após isso, foram aplicadas técnicas de *encoding* e balanceamento dos dados com *oversampling*.
 
-Após o pré-processamento dos dados, foram criados 5 modelos de machine learning, sendo um Dummy Classifier para controle e 4 modelos com abordagens diferentes para classificação. Esses modelos foram treinados e avaliados utilizando métricas de avaliação matemáticas e gráficas, para a escolha do melhor modelo. O melhor modelo então passou por uma validação cruzada e otimização dos hiperparâmetros para que o modelo pudesse ser posto em prática.
+Após o pré-processamento dos dados, foram criados 5 modelos de machine learning com a biblioteca [Scikit Learn](https://scikit-learn.org/stable/), sendo um Dummy Classifier para controle e 4 modelos com abordagens diferentes para classificação. Esses modelos foram treinados e avaliados utilizando métricas de avaliação matemáticas e gráficas, para a escolha do melhor modelo. O melhor modelo então passou por uma validação cruzada e otimização dos hiperparâmetros para que o modelo pudesse ser posto em prática.
+
+Após a otimização, que se mostrou ineficaz para esse projeto, os dados dos clientes que não haviam informação para a variável target na primeira semana do projeto foram inseridos no modelo e as previsões foram salvas em um [arquivo csv](https://github.com/vinicius-pf/Challenge_DataScience/blob/Semana-3/Semana%203%20e%204/dados/previsoes.csv) para que a empresa possa encontrar esses clientes e tentar reverter uma possível evasão.
 
 ## Entre em contato
 
