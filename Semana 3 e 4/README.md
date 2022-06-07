@@ -1,4 +1,4 @@
-# [Semana 3]
+# [Semana 3](https://github.com/vinicius-pf/Challenge_DataScience/blob/Semana-3/Semana%203%20e%204/Semana_3.ipynb)
 
 Após a conclusão da análise exploratória, a empresa requisitou que fosse desenvolvido, otimizado e avalido um modelo de Machine Learning, com o intuito de classificar e encontrar os clientes com maior possibilidade de cancelarem o contrato. Os principais pontos a serem desenvolvidos foram disponibilizados novamente via [Trello](https://trello.com/b/3HddKpUa/challenge-ds-semana-3).
 
@@ -228,17 +228,13 @@ Ao ser efetuada, a validação cruzada mostrou que a acurácia do modelo para da
 
 Antes de se utilizar os modelos, necessitou-se definir quais os hiperparâmetros seriam otimizados. Os parâmetros foram selecionados de acordo com um [artigo escrito por Tavish Srivastava](https://www.analyticsvidhya.com/blog/2015/06/tuning-random-forest-model/) e também com a [documentação do modelo](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html).
 
-Testes conduzidos com o número de estimadores definidos e os métodos [RandomizedSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV) e [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV) não mostrara resultados que trouxeram melhora significativa ao modelo. Além disso, o tempo de execução também foi maior para esses modelos. Por isso, foi utilizado o método experimental [HalvingGridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.HalvingGridSearchCV.html#sklearn.model_selection.HalvingGridSearchCV).
+Testes conduzidos com o número de estimadores definidos e o método [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV) não mostrara resultados que trouxeram melhora significativa ao modelo. Além disso, o tempo de execução também foi maior para esses modelos. Por isso foi utlizado o método [RandomizedSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV).
 
 
-### HalvingGridSearchCV
-
-Como o método está em fase experimental, é notado que o método pode sofrer alterações mais rapidamente. No entanto, em testes ele se mostrou mais rápido que o método GridSearchCV, tendo uma eficácia parecida.
-
+### RandomizedSearchCV
 
 ```python
-from sklearn.experimental import enable_halving_search_cv 
-from sklearn.model_selection import HalvingGridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 import numpy as np
 
 SEED = 42
@@ -248,29 +244,27 @@ modelo = RandomForestClassifier(random_state = SEED)
 espaco_de_parametros = {
     'max_features' : ['auto', 'sqrt', 'log2'],
     'n_estimators' : np.arange(50,400,step=50),
-    'min_samples_leaf' : list(np.arange(2,516,step=32)),
-    'max_depth' : np.arange(2,21,step=1)
+    'min_samples_leaf' : np.arange(50,516,step=32),
+    'max_depth' : np.arange(5,21,step=1)
 }
 
-busca = HalvingGridSearchCV(modelo,
-                     param_grid = espaco_de_parametros,
+busca = RandomizedSearchCV(modelo,
+                     param_distributions = espaco_de_parametros,
                      cv = StratifiedKFold(n_splits = 10),
                      n_jobs = -1,
-                     factor = 3,
+                     n_iter = 20,
                      random_state = SEED,
                      scoring = 'accuracy')
 
 busca.fit(X, y)
 ```
 
+Ao se utilizar desse método e aplicar novamente uma validação cruzada com StratifiedKFold, foi notado que o modelo apresentou resultados com acurácia inferior nos dados de treino e teste. Os problemas enfrentados com os testes de GridSearchCV e também esse resultado mostram que a escolha por um modelo de *oversampling* pode ter sido equivocada.
+
+Apesar disso, o modelo base criado possue acurácia de 85%, por isso será utilizado para prever a evasão dos clientes que possuíam valor em branco nas primeiras análises conduzidas.
+
 ## Usando o modelo com dados faltantes
 
 Na primeira semana do projeto, foi percebido que alguns clientes não possuíam valor para a coluna `Churn`, que é a variável target do sistema. Esses dados foram separados, com o intuito de, após o modelo de machine learning estar calibrado e validado, fosse possível prever essas informações e entregar a empresa. Com essas informações, a empresa poderá entrar em contato com os clientes que o modelo aponta que irão cancelar, para evitar que isso aconteça.
 
-Para incluir as informações no modelo, os dados passaram pelos mesmos processos de *encoding* e normalização dos dados, além também de remoção de colunas indejesadas. Após isso, os dados foram incluidos no modelo, que trouxe a informação dos clientes que poderão cancelar o contrato. Essa informação foi então salva em um arquivo csv e será encaminhada a empresa.
-
-
-
-
-
-
+Para incluir as informações no modelo, os dados passaram pelos mesmos processos de *encoding* e normalização dos dados, além também de remoção de colunas indejesadas. Após isso, os dados foram incluidos no modelo, que trouxe a informação dos clientes que poderão cancelar o contrato. Essa informação foi então salva em um arquivo csv e será encaminhada a empresa. Os dados ficaram disponíveis em um [arquivo csv](https://github.com/vinicius-pf/Challenge_DataScience/blob/Semana-3/Semana%203%20e%204/dados/previsoes.csv).
