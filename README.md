@@ -19,7 +19,7 @@ Neste desafio, a empresa Alura Voz, uma empresa de telecomunicações, deseja re
 
 ### Semana 1 Primeiros passos em Data Science
 
-[Link para o Notebook](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/Tratamento_dos_Dados.ipynb)
+[Link para o Notebook](https://github.com/vinicius-pf/Challenge_DataScience/blob/Correções/01%20Limpeza%20de%20dados/Tratamento_dos_Dados.ipynb)
 
 Na primeira semana, foi disponibilizada a base de dados por meio do [Trello](https://trello.com/b/JdUXpLrp/challenge-ds-semana-1). No mesmo local, foram enviados algumas requisições da empresa. Dentre os pedidos, estavam análises de informações e tipos de dados da base de dados, além de verificação e correção de inconsistências. Também foi requisitada uma tradução das informações presentes e criação de uma nova coluna, com valores gastos diariamente pelos clientes com base no valor pago mensalmente.
 
