@@ -19,7 +19,7 @@ Neste desafio, a empresa Alura Voz, uma empresa de telecomunicações, deseja re
 
 ### Semana 1 Primeiros passos em Data Science
 
-[Link para o Notebook](https://github.com/vinicius-pf/Challenge_DataScience/blob/main/Semana%201/Tratamento_dos_Dados.ipynb)
+[Link para o Notebook](https://github.com/vinicius-pf/Challenge_DataScience/blob/Correções/01%20Limpeza%20de%20dados/Tratamento_dos_Dados.ipynb)
 
 Na primeira semana, foi disponibilizada a base de dados por meio do [Trello](https://trello.com/b/JdUXpLrp/challenge-ds-semana-1). No mesmo local, foram enviados algumas requisições da empresa. Dentre os pedidos, estavam análises de informações e tipos de dados da base de dados, além de verificação e correção de inconsistências. Também foi requisitada uma tradução das informações presentes e criação de uma nova coluna, com valores gastos diariamente pelos clientes com base no valor pago mensalmente.
 
@@ -29,7 +29,7 @@ Ao longo das análises, foram percebidos que a coluna `Evasao`, a variável *tar
 
 ### Semana 2 Explorando os dados
 
-[Link para o notebook](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Semana-2/Semana%202/%20Analises_Graficas.ipynb)
+[Link para o notebook](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Correções/02%20Analise%20Exploratoria/Analise%20Exploratoria.ipynb)
 
 Para a segunda semana, a empresa solicitou, por meio do [Trello](https://trello.com/b/uUsVCrPb/challenge-ds-semana-2), que algumas visualizações fossem criadas. O foco das vizualizações foi a variável `Churn`, para que padrões e possíveis correlações pudessem ser percebidas. As visualizações foram criadas utilizando a biblioteca [Plotly](https://plotly.com/graphing-libraries/), que permite a criação de gráficos interativos. Porém, por se tratar de uma biblioteca escrita em Javascript, há erros de exibição pelo github. Para corrigir isso e visualizar o Jupyter Notebook com as análises, o link fornecido abre a visualização do notebook pelo meio do google colab.
 
