@@ -1,4 +1,4 @@
-# [Semana 2](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Semana-2/Semana%202/%20Analises_Graficas.ipynb)
+# [Semana 2](https://colab.research.google.com/github/vinicius-pf/Challenge_DataScience/blob/Correções/02%20Analise%20Exploratoria/Analises%20Exploratorias.ipynb)
 
 ## Correção de erros
 
